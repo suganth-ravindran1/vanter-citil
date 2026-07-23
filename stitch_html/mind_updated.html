@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>FreeMind AI - Mind</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#4A90E2",
+                        "on-primary": "#ffffff",
+                        "background": "#ffffff",
+                        "surface": "#ffffff",
+                        "surface-container-low": "#F8F9FF",
+                        "on-surface": "#1A1C1E",
+                        "on-surface-variant": "#44474E",
+                        "outline-variant": "#C4C6D0",
+                        "primary-container": "#D6E3FF",
+                        "on-primary-container": "#001B3E",
+                        "secondary-container": "#F2F0F7",
+                        "tertiary": "#6750A4" // Purple accent for the orb
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "gutter": "16px",
+                        "container-padding": "24px",
+                        "stack-md": "16px",
+                        "section-gap": "48px",
+                        "stack-lg": "32px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-xl-mobile": ["Hanken Grotesk"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "headline-xl": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-bold": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["17px", {"lineHeight": "26px", "fontWeight": "400"}],
+                        "headline-xl-mobile": ["24px", {"lineHeight": "30px", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "body-md": ["15px", {"lineHeight": "22px", "fontWeight": "400"}],
+                        "label-bold": ["13px", {"lineHeight": "18px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Hanken Grotesk', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .orb-glow {
+            background: radial-gradient(circle, rgba(103, 80, 164, 0.4) 0%, rgba(103, 80, 164, 0.1) 40%, transparent 70%);
+            filter: blur(20px);
+            animation: pulse 8s infinite ease-in-out;
+        }
+        
+        .nebula-center {
+            background: radial-gradient(circle, rgba(164, 144, 255, 0.6) 0%, rgba(103, 80, 164, 0.8) 100%);
+            box-shadow: 0 0 40px rgba(103, 80, 164, 0.3);
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.1); opacity: 0.9; }
+        }
+
+        .side-drawer {
+            border-right: 1px solid rgba(196, 198, 208, 0.2);
+            background: linear-gradient(180deg, #FDFDFF 0%, #F4F6FF 100%);
+        }
+
+        .input-shadow {
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface overflow-hidden h-screen flex">
+<!-- Side Navigation Drawer (Left Panel) -->
+<aside class="w-[280px] h-full side-drawer flex flex-col py-8 px-6 shrink-0 relative overflow-hidden">
+<!-- Brand -->
+<div class="mb-10">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-tertiary text-3xl" style="font-variation-settings: 'FILL' 1;">eco</span>
+<h2 class="font-headline-md text-headline-md text-[#1A1C1E]">FreeMind</h2>
+</div>
+<p class="text-sm text-on-surface-variant/70">Your mind matters.</p>
+</div>
+<!-- Navigation Links -->
+<nav class="flex-1 space-y-2">
+<a class="flex items-center justify-between p-3 rounded-2xl hover:bg-white transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_today</span>
+</div>
+<div>
+<p class="text-[14px] font-semibold text-on-surface">Today's Journal</p>
+<p class="text-[11px] text-on-surface-variant">Reflection of your day</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-2xl hover:bg-white transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-[#6750A415] flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-[20px]">dark_mode</span>
+</div>
+<div>
+<p class="text-[14px] font-semibold text-on-surface">Sleep Recovery</p>
+<p class="text-[11px] text-on-surface-variant">Personalized plans</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-tertiary transition-colors text-[18px]">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-2xl hover:bg-white transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">volunteer_activism</span>
+</div>
+<div>
+<p class="text-[14px] font-semibold text-on-surface leading-tight">Need Additional Support</p>
+<p class="text-[11px] text-on-surface-variant">Connect with a psychologist</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">chevron_right</span>
+</a>
+<div class="pt-6 pb-2">
+<div class="h-[1px] bg-outline-variant/20 w-full"></div>
+</div>
+<a class="flex items-center justify-between p-3 rounded-2xl hover:bg-white transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">settings</span>
+<span class="text-[14px] font-medium text-on-surface">Settings</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-2xl hover:bg-white transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">verified_user</span>
+<span class="text-[14px] font-medium text-on-surface">Privacy</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-2xl hover:bg-white transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">info</span>
+<span class="text-[14px] font-medium text-on-surface">About FreeMind</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">chevron_right</span>
+</a>
+</nav>
+<!-- Bottom Promo Box -->
+<div class="mt-auto p-4 rounded-3xl bg-primary/5 relative overflow-hidden">
+<div class="relative z-10">
+<p class="text-[13px] font-semibold text-primary mb-1">Be kind to your mind.</p>
+<p class="text-[12px] text-on-surface-variant leading-relaxed">You're doing your best. <span class="text-primary text-[10px] ml-1">♥</span></p>
+</div>
+<span class="material-symbols-outlined absolute -bottom-2 -right-2 text-primary/10 text-6xl opacity-40 rotate-12">spa</span>
+</div>
+</aside>
+<!-- Main Interface -->
+<main class="flex-1 flex flex-col relative bg-white overflow-hidden">
+<!-- Top Action Bar -->
+<header class="flex justify-between items-center px-8 py-6">
+<button class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant">close</span>
+</button>
+<button class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-surface-container-low transition-colors relative">
+<span class="material-symbols-outlined text-on-surface-variant">notifications</span>
+<div class="absolute top-2.5 right-2.5 w-2 h-2 bg-primary rounded-full border-2 border-white"></div>
+</button>
+</header>
+<!-- Content Area -->
+<div class="flex-1 flex flex-col items-center justify-start pt-4 px-8 overflow-y-auto hide-scrollbar pb-40">
+<!-- Quote Section -->
+<div class="text-center mb-12">
+<span class="material-symbols-outlined text-primary/30 text-2xl mb-2">format_quote</span>
+<h2 class="text-headline-xl-mobile font-headline-xl-mobile text-on-surface max-w-[200px] mx-auto">
+                You are allowed to slow down.
+            </h2>
+<div class="flex justify-center mt-3">
+<span class="material-symbols-outlined text-primary/40 text-sm" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+<!-- Central Orb Animation -->
+<div class="relative w-72 h-72 flex items-center justify-center mb-12">
+<div class="orb-glow absolute inset-0 rounded-full"></div>
+<div class="nebula-center w-48 h-48 rounded-full flex items-center justify-center relative z-10">
+<span class="material-symbols-outlined text-white text-6xl opacity-90" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<!-- Decorative Sparks -->
+<div class="absolute top-4 right-4 text-tertiary/30 animate-pulse">✦</div>
+<div class="absolute bottom-10 left-0 text-tertiary/20 animate-pulse delay-700">✦</div>
+<div class="absolute top-1/2 -right-4 text-tertiary/25 animate-bounce">✦</div>
+</div>
+<!-- Question Heading -->
+<div class="text-center mb-8">
+<h1 class="text-[26px] font-bold text-on-surface leading-tight px-4">
+                How can I<br/>support you today?
+            </h1>
+</div>
+<!-- Floating Input Section -->
+<div class="w-full max-w-lg mt-auto pb-4">
+<div class="bg-white rounded-[2rem] p-4 input-shadow border border-outline-variant/20 flex flex-col gap-4">
+<div class="px-4 py-2">
+<p class="text-on-surface-variant/50 font-body-md">Share what's on your mind...</p>
+</div>
+<div class="flex items-center justify-between">
+<button class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant">mic</span>
+</button>
+<button class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg active:scale-95 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Background Landscape (Bottom) -->
+<div class="absolute bottom-20 left-0 w-full h-32 opacity-20 pointer-events-none">
+<svg class="w-full h-full preserve-aspect-ratio" preserveaspectratio="none" viewbox="0 0 1440 320">
+<path d="M0,192L48,208C96,224,192,256,288,240C384,224,480,160,576,149.3C672,139,768,181,864,202.7C960,224,1056,224,1152,192C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" fill="#4A90E2" fill-opacity="1"></path>
+</svg>
+</div>
+<!-- Bottom App Navigation -->
+<nav class="absolute bottom-0 left-0 w-full bg-white/80 backdrop-blur-md border-t border-outline-variant/10 py-3 flex justify-center items-center gap-16 px-8">
+<a class="flex flex-col items-center gap-1 group" href="#">
+<div class="w-12 h-8 rounded-full bg-primary/10 flex items-center justify-center transition-all group-hover:bg-primary/20">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+</div>
+<span class="text-[11px] font-bold text-on-surface">Mind</span>
+<div class="w-1.5 h-1.5 bg-primary rounded-full"></div>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<div class="w-12 h-8 rounded-full bg-transparent flex items-center justify-center transition-all group-hover:bg-surface-container-low">
+<span class="material-symbols-outlined text-on-surface-variant">work_outline</span>
+</div>
+<span class="text-[11px] font-medium text-on-surface-variant">Toolkit</span>
+</a>
+</nav>
+</main>
+<script>
+    // Input interaction simulation
+    const inputArea = document.querySelector('.input-shadow');
+    inputArea.addEventListener('click', () => {
+        // Optional: Trigger a real input or focus
+    });
+</script>
+</body></html>

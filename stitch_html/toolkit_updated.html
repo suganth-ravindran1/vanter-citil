@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>FreeMind AI - Wellness Toolkit</title>
+<!-- Google Fonts: Hanken Grotesk -->
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#005da7",
+                        "on-primary": "#ffffff",
+                        "background": "#f8f9ff",
+                        "surface": "#f8f9ff",
+                        "on-surface": "#191c21",
+                        "on-surface-variant": "#414751",
+                        "outline-variant": "#c1c7d3",
+                        "surface-container-low": "#f2f3fb",
+                        "surface-container": "#ecedf5",
+                        "primary-container": "#2976c7",
+                        "brand-green": "#2D6A4F",
+                        "brand-green-light": "#D8F3DC"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "gutter": "16px",
+                        "container-padding": "24px",
+                        "stack-md": "16px",
+                        "section-gap": "48px",
+                        "stack-lg": "32px"
+                    },
+                    "fontFamily": {
+                        "body": ["Hanken Grotesk"],
+                        "headline": ["Hanken Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        
+        .card-shadow {
+            box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.04);
+        }
+
+        .glass-header {
+            background: rgba(248, 249, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        body {
+            background-color: #f8f9ff;
+            color: #191c21;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .active-tab-indicator {
+            position: relative;
+        }
+        .active-tab-indicator::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 4px;
+            background-color: currentColor;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="font-body min-h-screen flex flex-col selection:bg-primary/10">
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-50 glass-header">
+<div class="flex justify-between items-center px-container-padding py-4 max-w-2xl mx-auto w-full">
+<div class="flex items-center gap-2">
+<h1 class="text-[24px] font-bold text-on-surface">Wellness Toolkit</h1>
+<span class="material-symbols-outlined text-brand-green/60 !text-[24px]" data-icon="eco">eco</span>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-outline-variant/20 shadow-sm">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="favorite">favorite</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-20 pb-36 px-container-padding max-w-2xl mx-auto w-full">
+<p class="text-[17px] text-on-surface-variant mb-8">Simple tools for a calmer, healthier you.</p>
+<!-- Mind & Body Section -->
+<section class="mb-10">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-[20px] font-bold text-on-surface">Mind &amp; Body</h2>
+<span class="material-symbols-outlined text-brand-green/60" data-icon="eco">eco</span>
+</div>
+<p class="text-[15px] text-on-surface-variant mb-6">Move, breathe and reset.</p>
+<!-- Categories Tags -->
+<div class="flex gap-2 mb-8 overflow-x-auto no-scrollbar pb-1">
+<button class="px-5 py-2.5 rounded-full bg-brand-green text-white text-[14px] font-semibold flex items-center gap-2 transition-all shadow-md shadow-brand-green/20">
+<span class="material-symbols-outlined !text-[18px]" data-icon="directions_run">directions_run</span>
+                Exercise
+            </button>
+<button class="px-5 py-2.5 rounded-full bg-white border border-outline-variant/30 text-on-surface-variant text-[14px] font-medium flex items-center gap-2 hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined !text-[18px]" data-icon="self_improvement">self_improvement</span>
+                Meditation
+            </button>
+<button class="px-5 py-2.5 rounded-full bg-white border border-outline-variant/30 text-on-surface-variant text-[14px] font-medium flex items-center gap-2 hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined !text-[18px]" data-icon="self_improvement">self_improvement</span>
+                Yoga
+            </button>
+</div>
+<!-- Quick Picks Horizontal Carousel -->
+<div class="mb-4 flex items-center justify-between">
+<h3 class="text-[17px] font-bold text-on-surface">Quick Picks</h3>
+</div>
+<div class="flex gap-4 overflow-x-auto no-scrollbar -mx-container-padding px-container-padding pb-4">
+<!-- Quick Pick 1 -->
+<div class="min-w-[280px] bg-white rounded-3xl overflow-hidden card-shadow border border-outline-variant/10 flex-shrink-0">
+<div class="relative h-40">
+<img alt="Morning Energy" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALiCS-lBP-x5yZf_sT0L42tkAGm8jkrsogvDUSWf0Bo8EIeZu0yebEsdouKnOoQZEzmr8Aa-l6COkSurpf-tsOHPVKnIfGzDzhH-zwrBHoE0EYVtQq6PKkbaNmjFdhh2_7tAZK93lPczqZDooa7Ww87etBoG5csfiKMA8rXYEBOpxfPntHNIE8wH1LPInUie7Jgl9hmY5MTatEELmrQ6GUfgPoDpHC6BIGdls51hvJmR4OLz3-hRYlFupbO_mfmr46CzNrnTkpTA"/>
+<div class="absolute top-3 right-3 bg-black/40 backdrop-blur-md text-white text-[12px] font-bold px-2 py-1 rounded-lg">12 min</div>
+</div>
+<div class="p-4 flex justify-between items-center">
+<div>
+<h4 class="font-bold text-[16px] text-on-surface mb-1">Morning Energy</h4>
+<p class="text-[13px] text-on-surface-variant">A quick routine to boost your energy.</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Quick Pick 2 -->
+<div class="min-w-[280px] bg-white rounded-3xl overflow-hidden card-shadow border border-outline-variant/10 flex-shrink-0">
+<div class="relative h-40">
+<img alt="Strength Builder" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpIWnem-MEXtVraOWfRhMGqIsmZb0OIXgYTzoaWTskdXQJZGeDPH1Cc9R2TyJZ4nTJtLBsnng0VjTJkcJkNBEMolZAc_pUcR3DEq7M4y04af0kbkM_zu4rjZc2zAC3dV0Ykg6uhNL7ngwgY7rWuVPFKv2hFJMB1Thg-YOtq6kxymJHbHdG60XUEyFJ8vo5TI9cZg_-VjMkzDsUt6y3Niaeg6L6-4vJHxK7hOJ2k6z_uFzEZCt6v2CeUpLP3Er1S0sRCJUtXKIwig"/>
+<div class="absolute top-3 right-3 bg-black/40 backdrop-blur-md text-white text-[12px] font-bold px-2 py-1 rounded-lg">15 min</div>
+</div>
+<div class="p-4 flex justify-between items-center">
+<div>
+<h4 class="font-bold text-[16px] text-on-surface mb-1">Strength Builder</h4>
+<p class="text-[13px] text-on-surface-variant">Build strength with simple moves.</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Resources Section -->
+<section class="mb-10">
+<div class="flex items-center gap-2 mb-2">
+<h2 class="text-[20px] font-bold text-on-surface">Resources</h2>
+<span class="material-symbols-outlined text-primary/60" data-icon="auto_stories">auto_stories</span>
+</div>
+<p class="text-[15px] text-on-surface-variant mb-6">Learn, explore and grow.</p>
+<!-- Resource Type Tabs -->
+<div class="flex justify-between items-center mb-8 border-b border-outline-variant/20">
+<button class="flex flex-col items-center gap-2 pb-3 border-b-2 border-primary text-primary transition-all px-2">
+<span class="material-symbols-outlined !text-[24px]" data-icon="menu_book">menu_book</span>
+<span class="text-[12px] font-bold">Books</span>
+</button>
+<button class="flex flex-col items-center gap-2 pb-3 text-on-surface-variant hover:text-primary transition-all px-2 opacity-60">
+<span class="material-symbols-outlined !text-[24px]" data-icon="play_circle">play_circle</span>
+<span class="text-[12px] font-medium">Videos</span>
+</button>
+<button class="flex flex-col items-center gap-2 pb-3 text-on-surface-variant hover:text-primary transition-all px-2 opacity-60">
+<span class="material-symbols-outlined !text-[24px]" data-icon="chat_bubble">chat_bubble</span>
+<span class="text-[12px] font-medium">Stories</span>
+</button>
+<button class="flex flex-col items-center gap-2 pb-3 text-on-surface-variant hover:text-primary transition-all px-2 opacity-60">
+<span class="material-symbols-outlined !text-[24px]" data-icon="music_note">music_note</span>
+<span class="text-[12px] font-medium">Sounds</span>
+</button>
+</div>
+<!-- Resource List -->
+<div class="space-y-4">
+<div class="bg-white p-4 rounded-3xl flex gap-4 items-center card-shadow border border-outline-variant/10">
+<div class="w-16 h-20 bg-[#e8f5e9] rounded-xl flex-shrink-0 flex items-center justify-center overflow-hidden border border-outline-variant/10">
+<img alt="The Power of Now" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqZ0Q9VMiSYXOSj1x2OQXR_fjQDQt2A1L_sY6q9qThy_LltAuh79SkmRjvt6j6JkHIPpIXKAZAF9wn9BBGivuQV0VmculUuV2eqCL0tIItWO3zTWg187oPbuxxwGYL9-SePhApln7DJJKly27P959tQ2KC5n2jLNNLrhQN4IXZ7rStuDqk2uusG3XYzsUFtL-Z14aPCLbCp6roJiI878jH_j514VbQhxyW8ynhFspT1p45qqnw0FEhyPxbYxhmDg54y1TFShX05Q"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-bold text-[16px] text-on-surface">The Power of Now</h4>
+<p class="text-[13px] text-on-surface-variant line-clamp-2">A guide to living in the present and finding peace within.</p>
+<span class="text-[11px] font-bold text-primary mt-2 inline-block">Book</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+<div class="bg-white p-4 rounded-3xl flex gap-4 items-center card-shadow border border-outline-variant/10">
+<div class="w-16 h-20 bg-[#f3e5f5] rounded-xl flex-shrink-0 flex items-center justify-center overflow-hidden border border-outline-variant/10">
+<img alt="Why We Sleep" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB54RpgtCL2unXpzGq1MPC41rxaGZ5nHD_8K0Gtntg_nKbO5NSwIpSzU2xf02mfrdoA4TQvsYtTVba_ChOnmPY1gF2zH8ZqC3cI87HVXrmYfP7nMySeYCM-A5tN7vBkT292UNIR6m47gBdOAISNRWdXluPEFz56HC5jZm1REBwT9MHJyBoIAHHCnVSMPw_UUc38CNi66Q2SCRj7rnVQMPOCNRCTC-uCkQbcp6Ghc8Kie0Nfu-uL-QcNpE_GXRpTiUIujfTiBHwooQ"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-bold text-[16px] text-on-surface">Why We Sleep</h4>
+<p class="text-[13px] text-on-surface-variant line-clamp-2">The new science of sleep and dreams.</p>
+<span class="text-[11px] font-bold text-primary mt-2 inline-block">Book</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Routine Card -->
+<div class="bg-surface-container-low rounded-3xl p-6 border border-outline-variant/10 mb-8 flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm shrink-0">
+<span class="material-symbols-outlined text-brand-green" data-icon="calendar_today">calendar_today</span>
+</div>
+<div>
+<h3 class="font-bold text-[16px] text-on-surface">Stay Consistent</h3>
+<p class="text-[13px] text-on-surface-variant">Small steps every day lead to big changes.</p>
+</div>
+</div>
+<!-- Start Button -->
+<div class="fixed bottom-24 left-0 w-full px-container-padding pointer-events-none">
+<div class="max-w-2xl mx-auto w-full flex justify-center pointer-events-auto">
+<button class="w-full bg-brand-green text-white font-bold py-4 rounded-2xl flex items-center justify-center gap-2 shadow-lg shadow-brand-green/20 hover:bg-brand-green/90 transition-all active:scale-95">
+                Start Your Routine
+                <span class="material-symbols-outlined !text-[20px]" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-safe pt-3 bg-white/95 backdrop-blur-md border-t border-outline-variant/20 shadow-xl">
+<a class="flex flex-col items-center gap-1 py-1 text-on-surface-variant/60 hover:text-brand-green transition-colors" href="#">
+<span class="material-symbols-outlined !text-[26px]" data-icon="radio_button_unchecked">radio_button_unchecked</span>
+<span class="text-[12px] font-medium">Mind</span>
+</a>
+<a class="flex flex-col items-center gap-1 py-1 text-brand-green active-tab-indicator" href="#">
+<span class="material-symbols-outlined !text-[26px]" data-icon="inventory_2" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<span class="text-[12px] font-bold">Toolkit</span>
+</a>
+<a class="flex flex-col items-center gap-1 py-1 text-on-surface-variant/60 hover:text-brand-green transition-colors" href="#">
+<span class="material-symbols-outlined !text-[26px]" data-icon="person_outline">person_outline</span>
+<span class="text-[12px] font-medium">You</span>
+</a>
+</nav>
+</body></html>
