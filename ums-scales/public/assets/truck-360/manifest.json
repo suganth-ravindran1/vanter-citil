@@ -1,0 +1,954 @@
+{
+  "schema_version": "1.0.0",
+  "product": {
+    "title": "UMS Scales 8x4 Heavy-Duty Tipper Dump Truck on Pitless Weighbridge",
+    "model": "UMS-WB-TRUCK-8X4",
+    "description": "Production-ready scroll-driven interactive rotation capture of dump truck on weighbridge with digital compression load cells and approach ramps."
+  },
+  "sequence": {
+    "total_frames": 110,
+    "width": 1920,
+    "height": 1080,
+    "aspect_ratio": "16:9",
+    "format": "webp",
+    "filename_pattern": "frame_{index:04d}.webp",
+    "frame_path_template": "frames/frame_{index:04d}.webp",
+    "poster_path": "poster.webp",
+    "source": {
+      "video": "Dump_truck_on_weighbridge_scale_0158b464_1080p.mp4",
+      "video_duration_sec": 10.0,
+      "source_fps": 11.0,
+      "capture_type": "Photographic high-resolution turntable orbit"
+    },
+    "orbit_validation": {
+      "complete_360_verified": false,
+      "actual_orbit_coverage_degrees": 315.0,
+      "start_angle_degrees": 0.0,
+      "end_angle_degrees": 315.0,
+      "missing_arc_degrees": 45.0,
+      "orbit_direction": "Counter-clockwise (front -> passenger side / left -> rear -> driver side / right -> front-right 3/4)",
+      "audit_notes": "Verification of all 110 sequential frames confirms smooth camera orbit starting at dead front (0\u00b0), traversing left broadside (90\u00b0 at frame 36), dead rear (180\u00b0 at frame 72), right broadside (270\u00b0 at frame 98), and terminating at front-right three-quarter perspective (315\u00b0 at frame 110). It leaves an unfilmed ~45\u00b0 arc back to dead center. The scroll mapping faithfully binds 0.0-1.0 scroll progress to 0-315\u00b0 actual coverage without fabricating synthetic frames."
+    },
+    "key_milestones": [
+      {
+        "frame": 1,
+        "angle_deg": 0.0,
+        "label": "Front Center",
+        "view": "front",
+        "desc": "Direct front view showing cab grille, headlights, and approach ramp"
+      },
+      {
+        "frame": 36,
+        "angle_deg": 100.0,
+        "label": "Left Profile",
+        "view": "left",
+        "desc": "Full broadside of tipper bed, fuel tank, and weighbridge girder with UMS SCALES branding"
+      },
+      {
+        "frame": 72,
+        "angle_deg": 206.0,
+        "label": "Rear Center",
+        "view": "rear",
+        "desc": "Direct rear view showing tipper tailgate, tandem axle dual wheels, and rear ramp"
+      },
+      {
+        "frame": 98,
+        "angle_deg": 280.0,
+        "label": "Right Profile",
+        "view": "right",
+        "desc": "Driver-side broadside showing exhaust stack, battery box, and compression load cells"
+      },
+      {
+        "frame": 110,
+        "angle_deg": 315.0,
+        "label": "Front-Right \u00be",
+        "view": "front-right",
+        "desc": "Dynamic three-quarter hero angle framing cab, front wheel, and deck structure"
+      }
+    ],
+    "total_size_bytes": 6312396,
+    "average_frame_size_bytes": 57385,
+    "frames": [
+      {
+        "index": 1,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-001_0m00s000ms.jpg",
+        "filename": "frame_0001.webp",
+        "timestamp_sec": 0.0,
+        "approx_azimuth_deg": 0.0,
+        "size_bytes": 43740
+      },
+      {
+        "index": 2,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-002_0m00s091ms.jpg",
+        "filename": "frame_0002.webp",
+        "timestamp_sec": 0.091,
+        "approx_azimuth_deg": 2.89,
+        "size_bytes": 43532
+      },
+      {
+        "index": 3,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-003_0m00s183ms.jpg",
+        "filename": "frame_0003.webp",
+        "timestamp_sec": 0.183,
+        "approx_azimuth_deg": 5.78,
+        "size_bytes": 44302
+      },
+      {
+        "index": 4,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-004_0m00s274ms.jpg",
+        "filename": "frame_0004.webp",
+        "timestamp_sec": 0.274,
+        "approx_azimuth_deg": 8.67,
+        "size_bytes": 43502
+      },
+      {
+        "index": 5,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-005_0m00s366ms.jpg",
+        "filename": "frame_0005.webp",
+        "timestamp_sec": 0.366,
+        "approx_azimuth_deg": 11.56,
+        "size_bytes": 44144
+      },
+      {
+        "index": 6,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-006_0m00s457ms.jpg",
+        "filename": "frame_0006.webp",
+        "timestamp_sec": 0.457,
+        "approx_azimuth_deg": 14.45,
+        "size_bytes": 43322
+      },
+      {
+        "index": 7,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-007_0m00s548ms.jpg",
+        "filename": "frame_0007.webp",
+        "timestamp_sec": 0.548,
+        "approx_azimuth_deg": 17.34,
+        "size_bytes": 43274
+      },
+      {
+        "index": 8,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-008_0m00s640ms.jpg",
+        "filename": "frame_0008.webp",
+        "timestamp_sec": 0.64,
+        "approx_azimuth_deg": 20.23,
+        "size_bytes": 43206
+      },
+      {
+        "index": 9,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-009_0m00s731ms.jpg",
+        "filename": "frame_0009.webp",
+        "timestamp_sec": 0.731,
+        "approx_azimuth_deg": 23.12,
+        "size_bytes": 43816
+      },
+      {
+        "index": 10,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-010_0m00s822ms.jpg",
+        "filename": "frame_0010.webp",
+        "timestamp_sec": 0.822,
+        "approx_azimuth_deg": 26.01,
+        "size_bytes": 44718
+      },
+      {
+        "index": 11,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-011_0m00s914ms.jpg",
+        "filename": "frame_0011.webp",
+        "timestamp_sec": 0.914,
+        "approx_azimuth_deg": 28.9,
+        "size_bytes": 45660
+      },
+      {
+        "index": 12,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-012_0m01s005ms.jpg",
+        "filename": "frame_0012.webp",
+        "timestamp_sec": 1.005,
+        "approx_azimuth_deg": 31.79,
+        "size_bytes": 48830
+      },
+      {
+        "index": 13,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-013_0m01s097ms.jpg",
+        "filename": "frame_0013.webp",
+        "timestamp_sec": 1.097,
+        "approx_azimuth_deg": 34.68,
+        "size_bytes": 50008
+      },
+      {
+        "index": 14,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-014_0m01s188ms.jpg",
+        "filename": "frame_0014.webp",
+        "timestamp_sec": 1.188,
+        "approx_azimuth_deg": 37.57,
+        "size_bytes": 53446
+      },
+      {
+        "index": 15,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-015_0m01s279ms.jpg",
+        "filename": "frame_0015.webp",
+        "timestamp_sec": 1.279,
+        "approx_azimuth_deg": 40.46,
+        "size_bytes": 52030
+      },
+      {
+        "index": 16,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-016_0m01s371ms.jpg",
+        "filename": "frame_0016.webp",
+        "timestamp_sec": 1.371,
+        "approx_azimuth_deg": 43.35,
+        "size_bytes": 55550
+      },
+      {
+        "index": 17,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-017_0m01s462ms.jpg",
+        "filename": "frame_0017.webp",
+        "timestamp_sec": 1.462,
+        "approx_azimuth_deg": 46.24,
+        "size_bytes": 55052
+      },
+      {
+        "index": 18,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-018_0m01s553ms.jpg",
+        "filename": "frame_0018.webp",
+        "timestamp_sec": 1.553,
+        "approx_azimuth_deg": 49.13,
+        "size_bytes": 58094
+      },
+      {
+        "index": 19,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-019_0m01s645ms.jpg",
+        "filename": "frame_0019.webp",
+        "timestamp_sec": 1.645,
+        "approx_azimuth_deg": 52.02,
+        "size_bytes": 59590
+      },
+      {
+        "index": 20,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-020_0m01s736ms.jpg",
+        "filename": "frame_0020.webp",
+        "timestamp_sec": 1.736,
+        "approx_azimuth_deg": 54.91,
+        "size_bytes": 59622
+      },
+      {
+        "index": 21,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-021_0m01s828ms.jpg",
+        "filename": "frame_0021.webp",
+        "timestamp_sec": 1.828,
+        "approx_azimuth_deg": 57.8,
+        "size_bytes": 61968
+      },
+      {
+        "index": 22,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-022_0m01s919ms.jpg",
+        "filename": "frame_0022.webp",
+        "timestamp_sec": 1.919,
+        "approx_azimuth_deg": 60.69,
+        "size_bytes": 63546
+      },
+      {
+        "index": 23,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-023_0m02s010ms.jpg",
+        "filename": "frame_0023.webp",
+        "timestamp_sec": 2.01,
+        "approx_azimuth_deg": 63.58,
+        "size_bytes": 66712
+      },
+      {
+        "index": 24,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-024_0m02s102ms.jpg",
+        "filename": "frame_0024.webp",
+        "timestamp_sec": 2.102,
+        "approx_azimuth_deg": 66.47,
+        "size_bytes": 66900
+      },
+      {
+        "index": 25,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-025_0m02s193ms.jpg",
+        "filename": "frame_0025.webp",
+        "timestamp_sec": 2.193,
+        "approx_azimuth_deg": 69.36,
+        "size_bytes": 71680
+      },
+      {
+        "index": 26,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-026_0m02s284ms.jpg",
+        "filename": "frame_0026.webp",
+        "timestamp_sec": 2.284,
+        "approx_azimuth_deg": 72.25,
+        "size_bytes": 68254
+      },
+      {
+        "index": 27,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-027_0m02s376ms.jpg",
+        "filename": "frame_0027.webp",
+        "timestamp_sec": 2.376,
+        "approx_azimuth_deg": 75.14,
+        "size_bytes": 70142
+      },
+      {
+        "index": 28,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-028_0m02s467ms.jpg",
+        "filename": "frame_0028.webp",
+        "timestamp_sec": 2.467,
+        "approx_azimuth_deg": 78.03,
+        "size_bytes": 69258
+      },
+      {
+        "index": 29,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-029_0m02s559ms.jpg",
+        "filename": "frame_0029.webp",
+        "timestamp_sec": 2.559,
+        "approx_azimuth_deg": 80.92,
+        "size_bytes": 70900
+      },
+      {
+        "index": 30,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-030_0m02s650ms.jpg",
+        "filename": "frame_0030.webp",
+        "timestamp_sec": 2.65,
+        "approx_azimuth_deg": 83.81,
+        "size_bytes": 70996
+      },
+      {
+        "index": 31,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-031_0m02s741ms.jpg",
+        "filename": "frame_0031.webp",
+        "timestamp_sec": 2.741,
+        "approx_azimuth_deg": 86.7,
+        "size_bytes": 72838
+      },
+      {
+        "index": 32,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-032_0m02s833ms.jpg",
+        "filename": "frame_0032.webp",
+        "timestamp_sec": 2.833,
+        "approx_azimuth_deg": 89.59,
+        "size_bytes": 72722
+      },
+      {
+        "index": 33,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-033_0m02s924ms.jpg",
+        "filename": "frame_0033.webp",
+        "timestamp_sec": 2.924,
+        "approx_azimuth_deg": 92.48,
+        "size_bytes": 70802
+      },
+      {
+        "index": 34,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-034_0m03s015ms.jpg",
+        "filename": "frame_0034.webp",
+        "timestamp_sec": 3.015,
+        "approx_azimuth_deg": 95.37,
+        "size_bytes": 73036
+      },
+      {
+        "index": 35,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-035_0m03s107ms.jpg",
+        "filename": "frame_0035.webp",
+        "timestamp_sec": 3.107,
+        "approx_azimuth_deg": 98.26,
+        "size_bytes": 70412
+      },
+      {
+        "index": 36,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-036_0m03s198ms.jpg",
+        "filename": "frame_0036.webp",
+        "timestamp_sec": 3.198,
+        "approx_azimuth_deg": 101.15,
+        "size_bytes": 72666
+      },
+      {
+        "index": 37,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-037_0m03s290ms.jpg",
+        "filename": "frame_0037.webp",
+        "timestamp_sec": 3.29,
+        "approx_azimuth_deg": 104.04,
+        "size_bytes": 67518
+      },
+      {
+        "index": 38,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-038_0m03s381ms.jpg",
+        "filename": "frame_0038.webp",
+        "timestamp_sec": 3.381,
+        "approx_azimuth_deg": 106.93,
+        "size_bytes": 64274
+      },
+      {
+        "index": 39,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-039_0m03s472ms.jpg",
+        "filename": "frame_0039.webp",
+        "timestamp_sec": 3.472,
+        "approx_azimuth_deg": 109.82,
+        "size_bytes": 62224
+      },
+      {
+        "index": 40,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-040_0m03s564ms.jpg",
+        "filename": "frame_0040.webp",
+        "timestamp_sec": 3.564,
+        "approx_azimuth_deg": 112.71,
+        "size_bytes": 62930
+      },
+      {
+        "index": 41,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-041_0m03s655ms.jpg",
+        "filename": "frame_0041.webp",
+        "timestamp_sec": 3.655,
+        "approx_azimuth_deg": 115.6,
+        "size_bytes": 59734
+      },
+      {
+        "index": 42,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-042_0m03s746ms.jpg",
+        "filename": "frame_0042.webp",
+        "timestamp_sec": 3.746,
+        "approx_azimuth_deg": 118.49,
+        "size_bytes": 58058
+      },
+      {
+        "index": 43,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-043_0m03s838ms.jpg",
+        "filename": "frame_0043.webp",
+        "timestamp_sec": 3.838,
+        "approx_azimuth_deg": 121.38,
+        "size_bytes": 59770
+      },
+      {
+        "index": 44,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-044_0m03s929ms.jpg",
+        "filename": "frame_0044.webp",
+        "timestamp_sec": 3.929,
+        "approx_azimuth_deg": 124.27,
+        "size_bytes": 56472
+      },
+      {
+        "index": 45,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-045_0m04s021ms.jpg",
+        "filename": "frame_0045.webp",
+        "timestamp_sec": 4.021,
+        "approx_azimuth_deg": 127.16,
+        "size_bytes": 55258
+      },
+      {
+        "index": 46,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-046_0m04s112ms.jpg",
+        "filename": "frame_0046.webp",
+        "timestamp_sec": 4.112,
+        "approx_azimuth_deg": 130.05,
+        "size_bytes": 55532
+      },
+      {
+        "index": 47,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-047_0m04s203ms.jpg",
+        "filename": "frame_0047.webp",
+        "timestamp_sec": 4.203,
+        "approx_azimuth_deg": 132.94,
+        "size_bytes": 58638
+      },
+      {
+        "index": 48,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-048_0m04s295ms.jpg",
+        "filename": "frame_0048.webp",
+        "timestamp_sec": 4.295,
+        "approx_azimuth_deg": 135.83,
+        "size_bytes": 57680
+      },
+      {
+        "index": 49,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-049_0m04s386ms.jpg",
+        "filename": "frame_0049.webp",
+        "timestamp_sec": 4.386,
+        "approx_azimuth_deg": 138.72,
+        "size_bytes": 57828
+      },
+      {
+        "index": 50,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-050_0m04s477ms.jpg",
+        "filename": "frame_0050.webp",
+        "timestamp_sec": 4.477,
+        "approx_azimuth_deg": 141.61,
+        "size_bytes": 60890
+      },
+      {
+        "index": 51,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-051_0m04s569ms.jpg",
+        "filename": "frame_0051.webp",
+        "timestamp_sec": 4.569,
+        "approx_azimuth_deg": 144.5,
+        "size_bytes": 60152
+      },
+      {
+        "index": 52,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-052_0m04s660ms.jpg",
+        "filename": "frame_0052.webp",
+        "timestamp_sec": 4.66,
+        "approx_azimuth_deg": 147.39,
+        "size_bytes": 61664
+      },
+      {
+        "index": 53,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-053_0m04s752ms.jpg",
+        "filename": "frame_0053.webp",
+        "timestamp_sec": 4.752,
+        "approx_azimuth_deg": 150.28,
+        "size_bytes": 64240
+      },
+      {
+        "index": 54,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-054_0m04s843ms.jpg",
+        "filename": "frame_0054.webp",
+        "timestamp_sec": 4.843,
+        "approx_azimuth_deg": 153.17,
+        "size_bytes": 66812
+      },
+      {
+        "index": 55,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-055_0m04s934ms.jpg",
+        "filename": "frame_0055.webp",
+        "timestamp_sec": 4.934,
+        "approx_azimuth_deg": 156.06,
+        "size_bytes": 65010
+      },
+      {
+        "index": 56,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-056_0m05s026ms.jpg",
+        "filename": "frame_0056.webp",
+        "timestamp_sec": 5.026,
+        "approx_azimuth_deg": 158.94,
+        "size_bytes": 66698
+      },
+      {
+        "index": 57,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-057_0m05s117ms.jpg",
+        "filename": "frame_0057.webp",
+        "timestamp_sec": 5.117,
+        "approx_azimuth_deg": 161.83,
+        "size_bytes": 64104
+      },
+      {
+        "index": 58,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-058_0m05s208ms.jpg",
+        "filename": "frame_0058.webp",
+        "timestamp_sec": 5.208,
+        "approx_azimuth_deg": 164.72,
+        "size_bytes": 63042
+      },
+      {
+        "index": 59,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-059_0m05s300ms.jpg",
+        "filename": "frame_0059.webp",
+        "timestamp_sec": 5.3,
+        "approx_azimuth_deg": 167.61,
+        "size_bytes": 60788
+      },
+      {
+        "index": 60,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-060_0m05s391ms.jpg",
+        "filename": "frame_0060.webp",
+        "timestamp_sec": 5.391,
+        "approx_azimuth_deg": 170.5,
+        "size_bytes": 56056
+      },
+      {
+        "index": 61,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-061_0m05s483ms.jpg",
+        "filename": "frame_0061.webp",
+        "timestamp_sec": 5.483,
+        "approx_azimuth_deg": 173.39,
+        "size_bytes": 52552
+      },
+      {
+        "index": 62,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-062_0m05s574ms.jpg",
+        "filename": "frame_0062.webp",
+        "timestamp_sec": 5.574,
+        "approx_azimuth_deg": 176.28,
+        "size_bytes": 51164
+      },
+      {
+        "index": 63,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-063_0m05s665ms.jpg",
+        "filename": "frame_0063.webp",
+        "timestamp_sec": 5.665,
+        "approx_azimuth_deg": 179.17,
+        "size_bytes": 48390
+      },
+      {
+        "index": 64,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-064_0m05s757ms.jpg",
+        "filename": "frame_0064.webp",
+        "timestamp_sec": 5.757,
+        "approx_azimuth_deg": 182.06,
+        "size_bytes": 44518
+      },
+      {
+        "index": 65,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-065_0m05s848ms.jpg",
+        "filename": "frame_0065.webp",
+        "timestamp_sec": 5.848,
+        "approx_azimuth_deg": 184.95,
+        "size_bytes": 41334
+      },
+      {
+        "index": 66,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-066_0m05s939ms.jpg",
+        "filename": "frame_0066.webp",
+        "timestamp_sec": 5.939,
+        "approx_azimuth_deg": 187.84,
+        "size_bytes": 36650
+      },
+      {
+        "index": 67,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-067_0m06s031ms.jpg",
+        "filename": "frame_0067.webp",
+        "timestamp_sec": 6.031,
+        "approx_azimuth_deg": 190.73,
+        "size_bytes": 32920
+      },
+      {
+        "index": 68,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-068_0m06s122ms.jpg",
+        "filename": "frame_0068.webp",
+        "timestamp_sec": 6.122,
+        "approx_azimuth_deg": 193.62,
+        "size_bytes": 30364
+      },
+      {
+        "index": 69,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-069_0m06s214ms.jpg",
+        "filename": "frame_0069.webp",
+        "timestamp_sec": 6.214,
+        "approx_azimuth_deg": 196.51,
+        "size_bytes": 28788
+      },
+      {
+        "index": 70,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-070_0m06s305ms.jpg",
+        "filename": "frame_0070.webp",
+        "timestamp_sec": 6.305,
+        "approx_azimuth_deg": 199.4,
+        "size_bytes": 30270
+      },
+      {
+        "index": 71,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-071_0m06s396ms.jpg",
+        "filename": "frame_0071.webp",
+        "timestamp_sec": 6.396,
+        "approx_azimuth_deg": 202.29,
+        "size_bytes": 33454
+      },
+      {
+        "index": 72,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-072_0m06s488ms.jpg",
+        "filename": "frame_0072.webp",
+        "timestamp_sec": 6.488,
+        "approx_azimuth_deg": 205.18,
+        "size_bytes": 36054
+      },
+      {
+        "index": 73,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-073_0m06s579ms.jpg",
+        "filename": "frame_0073.webp",
+        "timestamp_sec": 6.579,
+        "approx_azimuth_deg": 208.07,
+        "size_bytes": 40396
+      },
+      {
+        "index": 74,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-074_0m06s670ms.jpg",
+        "filename": "frame_0074.webp",
+        "timestamp_sec": 6.67,
+        "approx_azimuth_deg": 210.96,
+        "size_bytes": 45594
+      },
+      {
+        "index": 75,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-075_0m06s762ms.jpg",
+        "filename": "frame_0075.webp",
+        "timestamp_sec": 6.762,
+        "approx_azimuth_deg": 213.85,
+        "size_bytes": 50230
+      },
+      {
+        "index": 76,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-076_0m06s853ms.jpg",
+        "filename": "frame_0076.webp",
+        "timestamp_sec": 6.853,
+        "approx_azimuth_deg": 216.74,
+        "size_bytes": 51976
+      },
+      {
+        "index": 77,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-077_0m06s945ms.jpg",
+        "filename": "frame_0077.webp",
+        "timestamp_sec": 6.945,
+        "approx_azimuth_deg": 219.63,
+        "size_bytes": 53968
+      },
+      {
+        "index": 78,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-078_0m07s036ms.jpg",
+        "filename": "frame_0078.webp",
+        "timestamp_sec": 7.036,
+        "approx_azimuth_deg": 222.52,
+        "size_bytes": 56712
+      },
+      {
+        "index": 79,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-079_0m07s127ms.jpg",
+        "filename": "frame_0079.webp",
+        "timestamp_sec": 7.127,
+        "approx_azimuth_deg": 225.41,
+        "size_bytes": 58144
+      },
+      {
+        "index": 80,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-080_0m07s219ms.jpg",
+        "filename": "frame_0080.webp",
+        "timestamp_sec": 7.219,
+        "approx_azimuth_deg": 228.3,
+        "size_bytes": 60380
+      },
+      {
+        "index": 81,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-081_0m07s310ms.jpg",
+        "filename": "frame_0081.webp",
+        "timestamp_sec": 7.31,
+        "approx_azimuth_deg": 231.19,
+        "size_bytes": 60458
+      },
+      {
+        "index": 82,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-082_0m07s401ms.jpg",
+        "filename": "frame_0082.webp",
+        "timestamp_sec": 7.401,
+        "approx_azimuth_deg": 234.08,
+        "size_bytes": 62256
+      },
+      {
+        "index": 83,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-083_0m07s493ms.jpg",
+        "filename": "frame_0083.webp",
+        "timestamp_sec": 7.493,
+        "approx_azimuth_deg": 236.97,
+        "size_bytes": 63124
+      },
+      {
+        "index": 84,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-084_0m07s584ms.jpg",
+        "filename": "frame_0084.webp",
+        "timestamp_sec": 7.584,
+        "approx_azimuth_deg": 239.86,
+        "size_bytes": 64882
+      },
+      {
+        "index": 85,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-085_0m07s676ms.jpg",
+        "filename": "frame_0085.webp",
+        "timestamp_sec": 7.676,
+        "approx_azimuth_deg": 242.75,
+        "size_bytes": 67762
+      },
+      {
+        "index": 86,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-086_0m07s767ms.jpg",
+        "filename": "frame_0086.webp",
+        "timestamp_sec": 7.767,
+        "approx_azimuth_deg": 245.64,
+        "size_bytes": 69582
+      },
+      {
+        "index": 87,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-087_0m07s858ms.jpg",
+        "filename": "frame_0087.webp",
+        "timestamp_sec": 7.858,
+        "approx_azimuth_deg": 248.53,
+        "size_bytes": 68898
+      },
+      {
+        "index": 88,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-088_0m07s950ms.jpg",
+        "filename": "frame_0088.webp",
+        "timestamp_sec": 7.95,
+        "approx_azimuth_deg": 251.42,
+        "size_bytes": 64900
+      },
+      {
+        "index": 89,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-089_0m08s041ms.jpg",
+        "filename": "frame_0089.webp",
+        "timestamp_sec": 8.041,
+        "approx_azimuth_deg": 254.31,
+        "size_bytes": 66242
+      },
+      {
+        "index": 90,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-090_0m08s132ms.jpg",
+        "filename": "frame_0090.webp",
+        "timestamp_sec": 8.132,
+        "approx_azimuth_deg": 257.2,
+        "size_bytes": 62252
+      },
+      {
+        "index": 91,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-091_0m08s224ms.jpg",
+        "filename": "frame_0091.webp",
+        "timestamp_sec": 8.224,
+        "approx_azimuth_deg": 260.09,
+        "size_bytes": 61398
+      },
+      {
+        "index": 92,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-092_0m08s315ms.jpg",
+        "filename": "frame_0092.webp",
+        "timestamp_sec": 8.315,
+        "approx_azimuth_deg": 262.98,
+        "size_bytes": 59608
+      },
+      {
+        "index": 93,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-093_0m08s407ms.jpg",
+        "filename": "frame_0093.webp",
+        "timestamp_sec": 8.407,
+        "approx_azimuth_deg": 265.87,
+        "size_bytes": 59554
+      },
+      {
+        "index": 94,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-094_0m08s498ms.jpg",
+        "filename": "frame_0094.webp",
+        "timestamp_sec": 8.498,
+        "approx_azimuth_deg": 268.76,
+        "size_bytes": 57824
+      },
+      {
+        "index": 95,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-095_0m08s589ms.jpg",
+        "filename": "frame_0095.webp",
+        "timestamp_sec": 8.589,
+        "approx_azimuth_deg": 271.65,
+        "size_bytes": 55896
+      },
+      {
+        "index": 96,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-096_0m08s681ms.jpg",
+        "filename": "frame_0096.webp",
+        "timestamp_sec": 8.681,
+        "approx_azimuth_deg": 274.54,
+        "size_bytes": 55906
+      },
+      {
+        "index": 97,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-097_0m08s772ms.jpg",
+        "filename": "frame_0097.webp",
+        "timestamp_sec": 8.772,
+        "approx_azimuth_deg": 277.43,
+        "size_bytes": 55916
+      },
+      {
+        "index": 98,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-098_0m08s863ms.jpg",
+        "filename": "frame_0098.webp",
+        "timestamp_sec": 8.863,
+        "approx_azimuth_deg": 280.32,
+        "size_bytes": 59238
+      },
+      {
+        "index": 99,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-099_0m08s955ms.jpg",
+        "filename": "frame_0099.webp",
+        "timestamp_sec": 8.955,
+        "approx_azimuth_deg": 283.21,
+        "size_bytes": 58942
+      },
+      {
+        "index": 100,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-100_0m09s046ms.jpg",
+        "filename": "frame_0100.webp",
+        "timestamp_sec": 9.046,
+        "approx_azimuth_deg": 286.1,
+        "size_bytes": 60376
+      },
+      {
+        "index": 101,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-101_0m09s138ms.jpg",
+        "filename": "frame_0101.webp",
+        "timestamp_sec": 9.138,
+        "approx_azimuth_deg": 288.99,
+        "size_bytes": 62184
+      },
+      {
+        "index": 102,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-102_0m09s229ms.jpg",
+        "filename": "frame_0102.webp",
+        "timestamp_sec": 9.229,
+        "approx_azimuth_deg": 291.88,
+        "size_bytes": 61856
+      },
+      {
+        "index": 103,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-103_0m09s320ms.jpg",
+        "filename": "frame_0103.webp",
+        "timestamp_sec": 9.32,
+        "approx_azimuth_deg": 294.77,
+        "size_bytes": 62964
+      },
+      {
+        "index": 104,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-104_0m09s412ms.jpg",
+        "filename": "frame_0104.webp",
+        "timestamp_sec": 9.412,
+        "approx_azimuth_deg": 297.66,
+        "size_bytes": 64206
+      },
+      {
+        "index": 105,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-105_0m09s503ms.jpg",
+        "filename": "frame_0105.webp",
+        "timestamp_sec": 9.503,
+        "approx_azimuth_deg": 300.55,
+        "size_bytes": 66732
+      },
+      {
+        "index": 106,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-106_0m09s594ms.jpg",
+        "filename": "frame_0106.webp",
+        "timestamp_sec": 9.594,
+        "approx_azimuth_deg": 303.44,
+        "size_bytes": 65540
+      },
+      {
+        "index": 107,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-107_0m09s686ms.jpg",
+        "filename": "frame_0107.webp",
+        "timestamp_sec": 9.686,
+        "approx_azimuth_deg": 306.33,
+        "size_bytes": 65072
+      },
+      {
+        "index": 108,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-108_0m09s777ms.jpg",
+        "filename": "frame_0108.webp",
+        "timestamp_sec": 9.777,
+        "approx_azimuth_deg": 309.22,
+        "size_bytes": 63596
+      },
+      {
+        "index": 109,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-109_0m09s869ms.jpg",
+        "filename": "frame_0109.webp",
+        "timestamp_sec": 9.869,
+        "approx_azimuth_deg": 312.11,
+        "size_bytes": 64090
+      },
+      {
+        "index": 110,
+        "source_file": "snaplytics_io_dump-truck-on-weighbridge-scale-0158b464_frame-110_0m09s960ms.jpg",
+        "filename": "frame_0110.webp",
+        "timestamp_sec": 9.96,
+        "approx_azimuth_deg": 315.0,
+        "size_bytes": 63642
+      }
+    ]
+  }
+}

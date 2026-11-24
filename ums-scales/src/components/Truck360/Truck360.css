@@ -1,0 +1,646 @@
+/* ==========================================================================
+   UMS SCALES — TRUCK 360 INTERACTIVE ROTATION EXPERIENCE
+   Industrial Precision Design System
+   ========================================================================== */
+
+:root {
+  --ums-bg-dark: #080b0f;
+  --ums-surface-1: #10151d;
+  --ums-surface-2: #171f2b;
+  --ums-border-subtle: rgba(255, 255, 255, 0.08);
+  --ums-border-focus: rgba(255, 255, 255, 0.22);
+  --ums-brand-yellow: #f59e0b;
+  --ums-brand-cyan: #38bdf8;
+  --ums-text-primary: #f8fafc;
+  --ums-text-secondary: #94a3b8;
+  --ums-text-muted: #64748b;
+  --ums-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --ums-font-mono: 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+/* Container */
+.truck360-container {
+  position: relative;
+  width: 100%;
+  background: var(--ums-bg-dark);
+  color: var(--ums-text-primary);
+  font-family: var(--ums-font);
+  overflow: clip;
+}
+
+/* Pinned Viewport Section */
+.truck360-pin-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 680px;
+  max-height: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 1.25rem 2rem;
+  background: radial-gradient(circle at 50% 45%, #151b24 0%, #080b0f 80%);
+  user-select: none;
+  overflow: hidden;
+}
+
+/* Ambient Backdrop Glow */
+.truck360-backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 65% 50% at 50% 55%, rgba(56, 189, 248, 0.03), transparent 70%);
+  z-index: 1;
+}
+
+/* Top Header Bar */
+.truck360-header {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--ums-border-subtle);
+}
+
+.truck360-brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.truck360-logo-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #253346, #121922);
+  border: 1px solid var(--ums-brand-yellow);
+  color: var(--ums-brand-yellow);
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.2);
+}
+
+.truck360-brand-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.truck360-brand-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #fff;
+}
+
+.truck360-model-name {
+  font-size: 0.7rem;
+  font-family: var(--ums-font-mono);
+  color: var(--ums-text-muted);
+  letter-spacing: 0.1em;
+}
+
+/* Headline Center */
+.truck360-top-center {
+  text-align: center;
+  flex: 1;
+}
+
+.truck360-headline {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.truck360-subheadline {
+  margin: 0.2rem 0 0;
+  font-size: 0.8rem;
+  color: var(--ums-text-secondary);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/* Header Actions & Nav Anchors */
+.truck360-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.truck360-nav-anchors {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.truck360-anchor-link {
+  color: var(--ums-text-secondary);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.truck360-anchor-link:hover {
+  color: #fff;
+}
+
+.truck360-anchor-link.highlight {
+  color: var(--ums-brand-cyan);
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.truck360-anchor-link.highlight:hover {
+  background: rgba(56, 189, 248, 0.2);
+}
+
+/* Interaction Mode Controls */
+.truck360-mode-controls {
+  display: flex;
+  align-items: center;
+  background: var(--ums-surface-1);
+  padding: 3px;
+  border-radius: 8px;
+  border: 1px solid var(--ums-border-subtle);
+}
+
+.truck360-mode-btn {
+  background: transparent;
+  border: none;
+  color: var(--ums-text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.truck360-mode-btn:hover {
+  color: var(--ums-text-primary);
+}
+
+.truck360-mode-btn.active {
+  background: var(--ums-surface-2);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Canvas Presentation Viewport */
+.truck360-canvas-wrapper {
+  position: relative;
+  z-index: 5;
+  flex: 1;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0.75rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #080b0f;
+  border-radius: 12px;
+  border: 1px solid var(--ums-border-subtle);
+  overflow: hidden;
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.8), 0 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+.truck360-canvas-wrapper.draggable {
+  cursor: grab;
+}
+
+.truck360-canvas-wrapper.draggable:active {
+  cursor: grabbing;
+}
+
+.truck360-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+/* Angle & Frame HUD */
+.truck360-angle-hud {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.truck360-hud-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(16, 21, 29, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--ums-border-subtle);
+}
+
+.truck360-hud-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--ums-brand-yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--ums-brand-yellow);
+}
+
+.truck360-hud-angle {
+  font-family: var(--ums-font-mono);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+.truck360-hud-label {
+  font-size: 0.65rem;
+  font-family: var(--ums-font-mono);
+  color: var(--ums-text-muted);
+  letter-spacing: 0.1em;
+}
+
+.truck360-frame-counter {
+  font-family: var(--ums-font-mono);
+  font-size: 0.75rem;
+  color: var(--ums-text-secondary);
+  background: rgba(16, 21, 29, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--ums-border-subtle);
+  letter-spacing: 0.05em;
+}
+
+/* Genuine Orbit Disclosure Pill */
+.truck360-orbit-pill {
+  position: absolute;
+  top: 1.25rem;
+  right: 4.5rem;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(23, 31, 43, 0.85);
+  backdrop-filter: blur(8px);
+  color: #7dd3fc;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  font-family: var(--ums-font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 5px 10px;
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.truck360-pill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  background: rgba(56, 189, 248, 0.2);
+  border-radius: 50%;
+  font-size: 0.65rem;
+}
+
+/* View Callout Overlay */
+.truck360-view-callout {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  z-index: 15;
+  background: rgba(16, 21, 29, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--ums-border-subtle);
+  max-width: 380px;
+  pointer-events: none;
+  animation: fadeInCallout 0.3s ease;
+}
+
+@keyframes fadeInCallout {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.truck360-callout-tag {
+  font-size: 0.65rem;
+  font-family: var(--ums-font-mono);
+  color: var(--ums-brand-yellow);
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.truck360-callout-title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.truck360-callout-desc {
+  margin: 0.35rem 0 0;
+  font-size: 0.8rem;
+  color: var(--ums-text-secondary);
+  line-height: 1.4;
+}
+
+/* Floating Tool Stack */
+.truck360-tool-stack {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.truck360-tool-btn {
+  width: 36px;
+  height: 36px;
+  background: rgba(16, 21, 29, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--ums-border-subtle);
+  color: var(--ums-text-secondary);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.truck360-tool-btn:hover {
+  background: var(--ums-surface-2);
+  color: #fff;
+  border-color: var(--ums-border-focus);
+}
+
+/* Loading Overlay */
+.truck360-loading-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 11, 15, 0.94);
+  backdrop-filter: blur(12px);
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.truck360-spinner {
+  width: 48px;
+  height: 48px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top-color: var(--ums-brand-yellow);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.truck360-loading-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.truck360-loading-text strong {
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  color: #fff;
+}
+
+.truck360-loading-text span {
+  font-size: 0.75rem;
+  color: var(--ums-text-muted);
+  font-family: var(--ums-font-mono);
+}
+
+.truck360-loading-bar-track {
+  width: 240px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.truck360-loading-bar-fill {
+  height: 100%;
+  background: var(--ums-brand-yellow);
+  transition: width 0.15s ease-out;
+}
+
+/* Error Overlay */
+.truck360-error-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 11, 15, 0.96);
+  z-index: 35;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.truck360-error-icon {
+  font-size: 2rem;
+  color: #ef4444;
+}
+
+.truck360-error-overlay strong {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.truck360-error-overlay p {
+  font-size: 0.85rem;
+  color: var(--ums-text-muted);
+  max-width: 400px;
+  margin: 0;
+}
+
+.truck360-btn-retry {
+  background: var(--ums-surface-2);
+  color: #fff;
+  border: 1px solid var(--ums-border-subtle);
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+/* Bottom Footer HUD */
+.truck360-footer {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.truck360-milestones-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.truck360-milestone-chip {
+  background: var(--ums-surface-1);
+  border: 1px solid var(--ums-border-subtle);
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ums-text-secondary);
+  transition: all 0.2s ease;
+}
+
+.truck360-milestone-chip:hover {
+  background: var(--ums-surface-2);
+  color: #fff;
+  border-color: var(--ums-border-focus);
+}
+
+.truck360-milestone-chip.active {
+  background: var(--ums-surface-2);
+  color: #fff;
+  border-color: var(--ums-brand-yellow);
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.25);
+}
+
+.truck360-chip-angle {
+  font-family: var(--ums-font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--ums-brand-yellow);
+}
+
+.truck360-chip-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+/* Guidance Hint Bar */
+.truck360-interaction-hint {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--ums-text-muted);
+  border-top: 1px solid var(--ums-border-subtle);
+  padding-top: 0.6rem;
+}
+
+.truck360-scroll-arrow {
+  display: inline-block;
+  color: var(--ums-brand-yellow);
+  animation: bounceDown 1.5s infinite;
+}
+
+@keyframes bounceDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(3px); }
+}
+
+.truck360-buffer-status {
+  font-family: var(--ums-font-mono);
+  font-size: 0.7rem;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .truck360-pin-section {
+    padding: 1rem 1.25rem;
+  }
+  .truck360-headline {
+    font-size: 1.1rem;
+  }
+  .truck360-subheadline {
+    font-size: 0.75rem;
+  }
+  .truck360-view-callout {
+    max-width: 280px;
+    padding: 0.75rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .truck360-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .truck360-top-center {
+    text-align: left;
+    width: 100%;
+  }
+  .truck360-headline {
+    font-size: 1rem;
+  }
+  .truck360-orbit-pill {
+    display: none;
+  }
+  .truck360-view-callout {
+    display: none;
+  }
+  .truck360-milestones-track {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+  .truck360-milestone-chip {
+    padding: 8px 12px;
+    min-height: 44px;
+    flex-shrink: 0;
+  }
+  .truck360-interaction-hint {
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: flex-start;
+  }
+}

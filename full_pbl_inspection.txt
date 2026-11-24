@@ -1,0 +1,497 @@
+P000 | Align: None | Style: Normal | Text: 
+P001 | Align: CENTER (1) | Style: Normal | Text: EARLY DETECTION AND EXPLAINABLE RISK SCORING IN NETWORK INTRUSION DETECTION SYSTEMS USING 
+P002 | Align: CENTER (1) | Style: Normal | Text: RANDOM FOREST ALGORITHM
+P003 | Align: CENTER (1) | Style: Normal | Text: 
+P004 | Align: CENTER (1) | Style: Normal | Text: A PROJECT BASED LEARNING (PBL) REPORT
+P005 | Align: CENTER (1) | Style: Normal | Text: Submitted by 
+P006 | Align: CENTER (1) | Style: Normal | Text: PURNIMA U
+P007 | Align: CENTER (1) | Style: Normal | Text: THANISKA E
+P008 | Align: CENTER (1) | Style: Normal | Text: SWASI M K S 
+P009 | Align: CENTER (1) | Style: Normal | Text: 
+P010 | Align: CENTER (1) | Style: Normal | Text: Submitted in partial fulfilment of the requirements 
+P011 | Align: CENTER (1) | Style: Normal | Text: for the 
+Project-Based Learning component of Machine Learning
+P012 | Align: CENTER (1) | Style: Normal | Text: BACHELOR OF ENGINEERING
+P013 | Align: CENTER (1) | Style: Normal | Text: 
+P014 | Align: CENTER (1) | Style: Normal | Text: in
+P015 | Align: CENTER (1) | Style: Normal | Text: 
+P016 | Align: CENTER (1) | Style: Normal | Text: COMPUTER SCIENCE AND ENGINEERING
+P017 | Align: CENTER (1) | Style: Normal | Text: 
+P018 | Align: CENTER (1) | Style: Normal | Text: 
+P019 | Align: None | Style: Normal | Text: 
+P020 | Align: CENTER (1) | Style: Normal | Text: CHENNAI INSTITUTE OF TECHNOLOGY, CHENNAI
+P021 | Align: CENTER (1) | Style: Normal | Text: 
+P022 | Align: CENTER (1) | Style: Normal | Text: Affiliated to Anna University, Chennai
+P023 | Align: CENTER (1) | Style: Normal | Text: (Autonomous)
+P024 | Align: CENTER (1) | Style: Normal | Text: OCTOBER 2026
+P025 | Align: CENTER (1) | Style: Normal | Text: 
+P026 | Align: None | Style: Normal | Text: Vision of the Institute:
+P027 | Align: None | Style: Normal | Text: 
+P028 | Align: None | Style: Normal | Text: 
+P029 | Align: None | Style: Normal | Text: 
+P030 | Align: None | Style: Normal | Text: Mission of the Institute:
+P031 | Align: None | Style: Normal | Text: 
+P032 | Align: None | Style: Normal | Text: 
+P033 | Align: None | Style: Normal | Text: 
+P034 | Align: None | Style: Normal | Text: 
+P035 | Align: None | Style: Normal | Text: 
+P036 | Align: None | Style: Normal | Text: 
+P037 | Align: None | Style: Normal | Text: 
+P038 | Align: None | Style: Normal | Text: 
+P039 | Align: None | Style: Normal | Text: 
+P040 | Align: None | Style: Normal | Text: 
+P041 | Align: None | Style: Normal | Text: 
+P042 | Align: None | Style: Normal | Text: 
+P043 | Align: None | Style: Normal | Text: 
+P044 | Align: None | Style: Normal | Text:                                              DEPARTMENT OF 
+P045 | Align: CENTER (1) | Style: Normal | Text: COMPUTER SCIENCE AND ENGINEERING
+P046 | Align: None | Style: Normal | Text: 
+P047 | Align: None | Style: Normal | Text: Vision of the Department:
+P048 | Align: None | Style: Normal | Text: 
+P049 | Align: None | Style: Normal | Text: 
+P050 | Align: None | Style: Normal | Text: 
+P051 | Align: None | Style: Normal | Text: Mission of the Department:
+P052 | Align: None | Style: Normal | Text: 
+P053 | Align: None | Style: Normal | Text: 
+P054 | Align: None | Style: Normal | Text: 
+P055 | Align: CENTER (1) | Style: Normal | Text: 
+P056 | Align: CENTER (1) | Style: Normal | Text: BONAFIDE CERTIFICATE
+P057 | Align: CENTER (1) | Style: Normal | Text: 
+P058 | Align: None | Style: Normal | Text: 
+P059 | Align: JUSTIFY (3) | Style: Normal | Text: This is to certify that the Project–Based Learning report titled “Early Detection and Explainable Network Intrusion Detection System” is a Bonafide record of work carried out by Purnima U – 2104251040723, Thaniska E – 2104251041034 and SWASI M K S - 2104251043025   of the Department of Computer Science and Engineering, Chennai Institute of Technology, as part of the continuous, mentor–guided Project-Based Learning (PBL) component of the Machine Learning course during the academic year [2026–2027] under my supervision.
+P060 | Align: CENTER (1) | Style: Normal | Text: 
+P061 | Align: CENTER (1) | Style: Normal | Text: 
+P062 | Align: CENTER (1) | Style: Normal | Text: 
+P063 | Align: None | Style: Normal | Text: 
+P064 | Align: CENTER (1) | Style: Normal | Text: 
+P065 | Align: CENTER (1) | Style: Normal | Text: 
+P066 | Align: CENTER (1) | Style: Normal | Text: 
+P067 | Align: None | Style: Normal | Text: 
+P068 | Align: None | Style: Normal | Text: Submitted for the final review held on …………………….
+P069 | Align: None | Style: Normal | Text: 
+P070 | Align: None | Style: Normal | Text: 
+P071 | Align: None | Style: Normal | Text: 
+P072 | Align: RIGHT (2) | Style: Normal | Text: 
+P073 | Align: RIGHT (2) | Style: Normal | Text: Internal Examiner
+P074 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P075 | Align: CENTER (1) | Style: Normal | Text: DECLARATION
+P076 | Align: JUSTIFY (3) | Style: Normal | Text: I/We jointly declare that the PBL report on “Early Detection and Explainable Network Intrusion Detection System” is the result of original work done by us and best of our knowledge, similar work has not been submitted to “ANNA UNIVERSITY, CHENNAI” for the requirement of Degree of BACHELOR OF ENGINEERING. This PBL report is submitted on the partial fulfilment of the requirement of the award of Degree of COMPUTER SCIENCE AND ENGINEERING.
+P077 | Align: None | Style: Normal | Text: 
+P078 | Align: None | Style: Normal | Text: 
+P079 | Align: None | Style: Normal | Text: 
+P080 | Align: RIGHT (2) | Style: Normal | Text: Signature
+P081 | Align: RIGHT (2) | Style: Normal | Text: 
+P082 | Align: RIGHT (2) | Style: Normal | Text: Purnima U
+P083 | Align: RIGHT (2) | Style: Normal | Text: Swasi MKS
+P084 | Align: RIGHT (2) | Style: Normal | Text: Thaniska E
+P085 | Align: RIGHT (2) | Style: Normal | Text: 
+P086 | Align: None | Style: Normal | Text: Place: Chennai
+Date:  
+P087 | Align: CENTER (1) | Style: Normal | Text: 
+P088 | Align: CENTER (1) | Style: Normal | Text: ACKNOWLEDGEMENT
+P089 | Align: None | Style: Normal | Text: We wish to express our sincere gratitude to our honorable Chairman SHRI. P. SRIRAM for providing immense facilities at our institution.
+P090 | Align: None | Style: Normal | Text: 
+P091 | Align: JUSTIFY (3) | Style: Normal | Text: We are very proudly rendering our thanks to our Principal Dr.A.RAMESH M.E, Ph.D., for the facilities and the encouragement given by him to the progress and completion of our project.
+P092 | Align: JUSTIFY (3) | Style: Normal | Text: We would like to express special thanks of gratitude to our Dean Dr. V. SRINIVASA RAO, M.E., Ph.D., who has been the key spring of motivation to us throughout the completion of our course and project work.
+P093 | Align: JUSTIFY (3) | Style: Normal | Text: We proudly render our immense gratitude to the Head of the Department Dr. S. PAVITHRA	M.E,	Ph.D., for her effective leadership, encouragement and guidance in the project.
+P094 | Align: JUSTIFY (3) | Style: Normal | Text: We would like to extend our thanks to t h e Project Co-ordinator Dr.T. Vignesh M.Tech.,Ph.D  Department of Computer Science and Engineering, for their valuable suggestions throughout this project.
+P095 | Align: JUSTIFY (3) | Style: Normal | Text: We wish to acknowledge the help received from the class advisors Dr.Ayeesha Nasreen M.E,Ph.D.,  of the Department of Computer Science and Engineering and others for providing valuable suggestions and for the successful completion of the project.
+P096 | Align: None | Style: Normal | Text: 
+P097 | Align: None | Style: Normal | Text: 
+P098 | Align: None | Style: Normal | Text: 
+P099 | Align: None | Style: Normal | Text: 
+P100 | Align: JUSTIFY (3) | Style: Normal | Text: PURNIMA U(2104251040723)
+P101 | Align: JUSTIFY (3) | Style: Normal | Text: THANISKA E(2104251041034)
+P102 | Align: JUSTIFY (3) | Style: Normal | Text: SWASI M K S(2104251043025)
+P103 | Align: CENTER (1) | Style: Normal | Text: ABSTRACT
+P104 | Align: None | Style: Normal | Text: 
+P105 | Align: JUSTIFY (3) | Style: Normal | Text: Traditional network intrusion detection systems classify traffic only upon session completion, delaying response to fast-onset attacks such as Distributed Denial of Service (DDoS) and brute-force attempts, while binary alert outputs contribute significantly to analyst alert fatigue in Security Operations Centre (SOC) environments. We propose a flow-level IDS using a Random Forest classifier trained on the CICIDS2017 dataset — comprising 3,119,345 labeled network flows across 15 attack classes — augmented with two novel contributions: time-windowed early detection that evaluates classification performance at 1-second and 5-second partial-flow windows, and SHAP-based explainable risk scoring that converts model confidence scores into actionable HIGH, MEDIUM, and LOW alert tiers with per-prediction feature attribution. Our model achieves 99.31% overall accuracy; volume-based attacks (DDoS, PortScan) are reliably detected within 1 second of flow onset (F1=0.999), while HIGH-tier risk alerts achieve 99.42% precision, reducing analyst review burden to 20.3% of total network traffic. These results demonstrate that combining early detection with explainability directly addresses two documented SOC operational pain points without requiring deep packet inspection or live traffic capture.
+P106 | Align: None | Style: Normal | Text: 
+P107 | Align: JUSTIFY (3) | Style: Normal | Text: Keywords: Network Intrusion Detection, Random Forest, CICIDS2017, Early Detection, SHAP, Alert Fatigue, Risk Scoring, Flow-Level Features
+P108 | Align: CENTER (1) | Style: Normal | Text: TABLE OF CONTENTS
+P109 | Align: CENTER (1) | Style: Normal | Text: 
+P110 | Align: CENTER (1) | Style: Normal | Text: 
+P111 | Align: CENTER (1) | Style: Normal | Text: 
+P112 | Align: CENTER (1) | Style: Normal | Text: LIST OF FIGURES
+P113 | Align: None | Style: Normal | Text: 
+P114 | Align: JUSTIFY (3) | Style: Normal | Text: Figure 1.1 [Title] ....................................................... [11]
+P115 | Align: JUSTIFY (3) | Style: Normal | Text: Figure 4.1 System architecture diagram ................... [16]
+P116 | Align: JUSTIFY (3) | Style: Normal | Text: Figure 6.1 [Result chart / confusion matrix] ............. [24]
+P117 | Align: None | Style: Normal | Text: 
+P118 | Align: None | Style: Normal | Text: 
+P119 | Align: None | Style: Normal | Text: 
+P120 | Align: None | Style: Normal | Text: 
+P121 | Align: CENTER (1) | Style: Normal | Text: LIST OF TABLES
+P122 | Align: None | Style: Normal | Text: 
+P123 | Align: JUSTIFY (3) | Style: Normal | Text: Table 3.1 Weekly PBL progress log .......................... [15]
+P124 | Align: JUSTIFY (3) | Style: Normal | Text: Table 3.2 Hardware and software requirements ........ [15]
+P125 | Align: JUSTIFY (3) | Style: Normal | Text: Table 6.1 Model evaluation results ........................... [24]
+P126 | Align: None | Style: Normal | Text:  
+P127 | Align: CENTER (1) | Style: Normal | Text: 
+P128 | Align: CENTER (1) | Style: Normal | Text: 
+P129 | Align: CENTER (1) | Style: Normal | Text: 
+P130 | Align: CENTER (1) | Style: Normal | Text: 
+P131 | Align: CENTER (1) | Style: Normal | Text: 
+P132 | Align: CENTER (1) | Style: Normal | Text: 
+P133 | Align: CENTER (1) | Style: Normal | Text: 
+P134 | Align: CENTER (1) | Style: Normal | Text: LIST OF ABBREVIATIONS
+P135 | Align: None | Style: Normal | Text: 
+P136 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P137 | Align: CENTER (1) | Style: Heading 1 | Text: CHAPTER 1
+P138 | Align: CENTER (1) | Style: Heading 1 | Text: INTRODUCTION
+P139 | Align: None | Style: Heading 2 | Text: Background
+P140 | Align: JUSTIFY (3) | Style: Normal | Text: The rapid growth of internet-connected systems has made network security one of the most critical concerns for organisations of all sizes. Cyberattacks including Distributed Denial of Service (DDoS) floods, port scanning, brute-force credential attacks, botnet command traffic, and web application exploits cause billions of dollars in damages annually and disrupt services that millions of users depend on. The increasing volume and sophistication of these attacks make manual monitoring infeasible, driving demand for automated Intrusion Detection Systems (IDS) that can identify malicious traffic without human intervention[1]. Traditional IDS solutions fall into two categories: signature-based systems, which match traffic against known attack patterns, and anomaly-based systems, which flag deviations from a baseline of normal behaviour. Signature-based systems are effective against known attacks but fail against novel or zero-day threats. Anomaly-based systems are more general but suffer from high false positive rates. The widespread adoption of encrypted traffic protocols (HTTPS, TLS, VPN) has further limited payload-inspection approaches, as encrypted content cannot be directly analysed. This shift has pushed the field toward flow-level feature analysis — examining the statistical properties of network conversations (packet timing, size, rate, flag counts) rather than their content, which remains effective even on encrypted traffic. Machine learning-based IDS trained on flow-level features have shown strong performance on benchmark datasets. However, most existing work stops at reporting high accuracy on completed network flows — a limitation that does not reflect real SOC operational requirements. Security analysts need to know: (1) how quickly can an attack be flagged, not just whether it can be flagged after the fact, and (2) why is the system raising this alert, not just that it is. This project directly targets both gaps.
+P141 | Align: None | Style: Heading 2 | Text: Driving Question
+P142 | Align: None | Style: List Paragraph | Text: “Can a machine learning model trained on flow-level network statistics reliably detect different attack types before a network session completes, and can its predictions be made explainable and actionable enough to reduce alert fatigue in a Security Operations Centre environment?”
+P143 | Align: None | Style: List Paragraph | Text: 
+P144 | Align: JUSTIFY (3) | Style: List Paragraph | Text:  More specifically: given the 85 flow-level features provided by the CICIDS2017 dataset, we investigate whether (a) truncating cumulative flow features at sub-session time windows (1 second, 5 seconds) retains sufficient discriminating signal to identify attack type early, and (b) converting model confidence scores into ranked risk tiers accompanied by SHAP feature attributions produces outputs that are more operationally useful than binary attack/benign labels.
+P145 | Align: None | Style: Heading 2 | Text: Objectives
+P146 | Align: JUSTIFY (3) | Style: List Paragraph | Text: To collect, merge, and preprocess the CICIDS2017 dataset (8 CSV files, 3.1M rows, 85 features) for multi-class attack classification. 
+P147 | Align: JUSTIFY (3) | Style: List Paragraph | Text: To design and train a Random Forest classifier for 15-class network flow classification with class-imbalance handling via class_weight="balanced". 
+P148 | Align: JUSTIFY (3) | Style: List Paragraph | Text: To implement a time-windowed early detection experiment by simulating partial flow observation at 1-second and 5-second windows through proportional feature scaling. 
+P149 | Align: JUSTIFY (3) | Style: List Paragraph | Text: To integrate SHAP TreeExplainer for per-prediction feature attribution, identifying which flow statistics drive each alert. 
+P150 | Align: JUSTIFY (3) | Style: List Paragraph | Text: To design a three-tier risk scoring system (HIGH/MEDIUM/LOW) based on model prediction confidence, and evaluate its precision in reducing analyst review burden.
+P151 | Align: JUSTIFY (3) | Style: List Paragraph | Text:  To build a Flask-based web prototype demonstrating the end-to-end pipeline from flow input to alert output with risk tier and explanation.
+P152 | Align: None | Style: Heading 2 | Text: 1.4 Scope and Limitations
+P153 | Align: JUSTIFY (3) | Style: Normal | Text: This project operates entirely on the CICIDS2017 benchmark dataset — pre-recorded, labeled network flow statistics extracted using CICFlowMeter. The scope includes multi-class attack classification, time-windowed early detection simulation, SHAP explainability, and risk scored alert generation. The system is implemented as an offline prototype with a Flask web interface for demonstration purposes. The following are explicitly out of scope: live network packet capture or real-time traffic processing; deep packet inspection or payload-level analysis; adversarial robustness testing; deployment on a production network; and evaluation on datasets other than CICIDS2017. The truncated-flow experiment approximates partial flow observation by scaling cumulative features proportionally — this is a simulation, not true sub-flow re-extraction from raw PCAPs. These limitations are documented in detail in Section 6.4. 
+P154 | Align: CENTER (1) | Style: Heading 1 | Text: CHAPTER 2
+P155 | Align: CENTER (1) | Style: Heading 1 | Text: CONCEPT EXPLORATION
+P156 | Align: None | Style: Heading 2 | Text: 2.1 Related Approaches
+P157 | Align: None | Style: Normal | Text: 2.1.1 Classical Machine Learning for IDS 
+P158 | Align: JUSTIFY (3) | Style: Normal | Text: Sharafaldin et al. [1] introduced the CICIDS2017 dataset and demonstrated baseline classification using Random Forest and other classical ML algorithms, reporting accuracy above 97% on individual attack categories. Their work established the dataset as the de facto benchmark for flow-level IDS research, but evaluated only on completed flows without considering detection speed. Lashkari et al. [2] used the same dataset with a focus on feature selection, demonstrating that a subset of 20 features retained near-full classification performance, reducing computational overhead — a finding relevant to real-time deployment but not explored in the early-detection context.
+P159 | Align: None | Style: Normal | Text:  2.1.2 Deep Learning Approaches 
+P160 | Align: JUSTIFY (3) | Style: Normal | Text: Vinayakumar et al. [3] applied deep neural networks including LSTM and CNN architectures to network intrusion detection, arguing that temporal dependencies in packet sequences provide richer signal than static flow statistics. While achieving strong accuracy, these approaches require substantially more computational resources and training data than classical ML, making them less practical for resource-constrained deployments. Additionally, their black-box nature makes explainability — a key requirement for SOC integration — difficult to achieve without additional post-hoc methods.
+P161 | Align: None | Style: Normal | Text:  2.1.3 Early and Incremental Detection
+P162 | Align: JUSTIFY (3) | Style: Normal | Text:  Early detection in network security has been studied in the context of DDoS mitigation, where response time is critical. Ring et al. [4] surveyed flow-based anomaly detection methods and noted that most academic benchmarks assume full-flow feature availability, creating a gap between reported performance and deployable performance. Work on early traffic classification — primarily in the Quality of Service domain — has shown that the first few packets of a flow carry disproportionate discriminating information for common traffic types, supporting our hypothesis that fast-onset attacks may be detectable early.
+P163 | Align: None | Style: Normal | Text:  2.1.4 Explainable AI in Cybersecurity
+P164 | Align: JUSTIFY (3) | Style: Normal | Text:  Lundberg and Lee [5] introduced SHAP (SHapley Additive exPlanations), providing a unified framework for interpreting any ML model prediction in terms of feature contributions. Subsequent work applying SHAP to network security (including IDS) has shown that flow level features such as packet rate, flow duration, and flag counts are consistently the most influential predictors across attack types, aligning with domain knowledge about how different attacks manifest in network behaviour. 
+P165 | Align: None | Style: Normal | Text: 2.1.5 Alert Fatigue in SOC Environments 
+P166 | Align: JUSTIFY (3) | Style: Normal | Text: Veerasamy et al. [6] documented that SOC analysts in enterprise environments face thousands of undifferentiated alerts daily, with false positive rates in commercial IDS products frequently exceeding 40%. The resulting analyst fatigue leads to genuine threats being overlooked due to volume overload. Risk-ranked alert prioritisation — assigning severity scores to alerts based on confidence and context — has been proposed as a mitigation, but implementations in academic IDS prototypes remain sparse.
+P167 | Align: None | Style: Heading 2 | Text: 2.2 Summary Table
+P168 | Align: None | Style: Normal | Text: 
+P169 | Align: None | Style: Heading 2 | Text: 2.3 What This Told Us
+P170 | Align: JUSTIFY (3) | Style: Normal | Text: The literature confirmed that Random Forest on CICIDS2017 is a well-validated baseline achieving strong performance, making it an appropriate starting point for our Iteration 1. The key insight from our exploration was that no existing student-level or accessible implementation combines time-windowed early detection with SHAP explainability and risk scoring on CICIDS2017 — each component exists in isolation in the literature, but not together. This gap defined our differentiating contributions. We chose Random Forest over deep learning specifically because (a) it provides native feature importance compatible with SHAP TreeExplainer, (b) it is interpretable by construction (individual trees are human-readable), and (c) it trains in practical time on our hardware without GPU acceleration.
+P171 | Align: JUSTIFY (3) | Style: Heading 1 | Text: CHAPTER 3 
+P172 | Align: JUSTIFY (3) | Style: Heading 1 | Text:          PROJECT PLANNING AND TEAM ORGANISATION
+P173 | Align: None | Style: Heading 2 | Text: 3.1 Weekly PBL Progress Log
+P174 | Align: None | Style: Normal | Text: 
+P175 | Align: None | Style: Normal | Text: 
+P176 | Align: None | Style: Heading 2 | Text: 3.2 Requirements
+P177 | Align: None | Style: Normal | Text: 
+P178 | Align: None | Style: Heading 2 | Text: 3.3 Feasibility
+P179 | Align: JUSTIFY (3) | Style: Normal | Text: The project is achievable within the six-week PBL timeframe using a standard student laptop. The CICIDS2017 dataset is publicly available at no cost, and all required libraries are open source. The most computationally intensive step — Random Forest training on 2.2 million samples — completes in approximately 15 minutes on a mid-range CPU (Intel i5, 8GB RAM) without GPU acceleration, making the project feasible without cloud computing resources. The Flask prototype runs locally and requires no server infrastructure. The scope explicitly excludes live traffic capture and deep packet inspection, keeping the implementation within the capabilities of a two-person student team over six weeks. 
+P180 | Align: CENTER (1) | Style: Heading 1 | Text: CHAPTER 4
+P181 | Align: CENTER (1) | Style: Heading 1 | Text:  ITERATIVE DESIGN AND DEVELOPMENT
+P182 | Align: None | Style: Heading 2 | Text: 4.1 System Architecture
+P183 | Align: None | Style: Normal | Text: Figure 4.1 — System architecture diagram
+P184 | Align: None | Style: Normal | Text: 
+P185 | Align: None | Style: Normal | Text: 
+P186 | Align: None | Style: Normal | Text: 
+P187 | Align: None | Style: Normal | Text: 
+P188 | Align: None | Style: Normal | Text: 
+P189 | Align: None | Style: Normal | Text: 
+P190 | Align: JUSTIFY (3) | Style: Normal | Text: The src/ directory contains six reusable Python modules: 
+P191 | Align: JUSTIFY (3) | Style: List Paragraph | Text: data_loader.py (CSV ingestion), 
+P192 | Align: JUSTIFY (3) | Style: List Paragraph | Text: preprocessor.py (cleaning, encoding, splitting), 
+P193 | Align: JUSTIFY (3) | Style: List Paragraph | Text: truncator.py (time-window simulation),
+P194 | Align: JUSTIFY (3) | Style: List Paragraph | Text: model.py (Random Forest construction, persistence),                             
+P195 | Align: JUSTIFY (3) | Style: List Paragraph | Text: explainer.py (SHAP integration),                                                                                          
+P196 | Align: JUSTIFY (3) | Style: List Paragraph | Text: risk_scorer.py (confidence-to-tier conversion).
+P197 | Align: JUSTIFY (3) | Style: Normal | Text:  Six Jupyter notebooks drive each stage of the pipeline, with intermediate outputs saved as .pkl and .csv files to decouple stages and avoid re-running expensive steps.
+P198 | Align: None | Style: Heading 2 | Text: 4.2 Iteration 1 — Baseline
+P199 | Align: None | Style: Normal | Text: 
+P200 | Align: JUSTIFY (3) | Style: Normal | Text: Iteration 1 targeted a working multi-class classifier on the full CICIDS2017 dataset. The initial attempt loaded all 8 CSV files (3,119,345 rows, 85 columns) and immediately attempted to train a Random Forest without preprocessing. This failed due to: (1) UnicodeDecodeError from UTF-8 incompatible characters in the Thursday WebAttacks CSV (resolved by switching to latin-1 encoding); (2) ValueError from non-numeric string columns (Flow ID, Source IP, Destination IP, Timestamp) that SMOTE and sklearn cannot process; and (3) NaN/Infinity values in Flow Bytes/s and Flow Packets/s from zero-duration flows causing division by zero.
+P201 | Align: JUSTIFY (3) | Style: Normal | Text: After cleaning (291,469 rows removed, 8 constant columns dropped, 6 string columns dropped), a Random Forest with default parameters achieved 99.31% accuracy but showed poor F1 on minority classes (Bot: 0.23, Web XSS: 0.41). An attempt to apply SMOTE to the 2.2M-row training set resulted in a MemoryError (system attempted to allocate 14.2 GiB). The resolution was to use class_weight="balanced" in the Random Forest constructor, which internally adjusts sample weights to compensate for imbalance without generating synthetic samples.
+P202 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P203 | Align: None | Style: Heading 2 | Text: 4.3 Iteration 2 — Early Detection Refinement
+P204 | Align: None | Style: Normal | Text: 
+P205 | Align: None | Style: Normal | Text: Mentor feedback after Iteration 1 highlighted that a 99% accurate classifier on completed flows, while technically correct, does not differentiate the project from existing CICIDS2017
+P206 | Align: JUSTIFY (3) | Style: Normal | Text: notebooks. Iteration 2 added the time-windowed early detection experiment. The truncator.py module implements proportional scaling of cumulative features:
+P207 | Align: None | Style: Normal | Text: scale = min(time_window_microseconds, flow_duration) / flow_duration
+P208 | Align: None | Style: Normal | Text: truncated_feature = original_feature × scale
+P209 | Align: None | Style: Normal | Text: 
+P210 | Align: JUSTIFY (3) | Style: Normal | Text: This was applied to 8 cumulative features (Total Fwd/Bwd Packets, Total Length of Fwd/Bwd Packets, Fwd/Bwd Packets/s, Flow Bytes/s, Flow Packets/s) across three time windows: 1 second, 5 seconds, and the full flow. Duration-independent features (packet length means, flag counts, IAT statistics) were left unchanged, as they do not accumulate over time. The same trained Iteration 1 model was evaluated on each windowed version of the test set, producing per-class F1 scores at each window. This approach is a simulation — not true re-extraction from PCAPs — which is acknowledged as a limitation in Section 6.4.
+P211 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P212 | Align: None | Style: Heading 2 | Text: 4.4 Final Approach
+P213 | Align: JUSTIFY (3) | Style: Normal | Text: The final system combines the Iteration 2 classifier with two additional components: SHAP-based feature attribution and confidence-based risk scoring. The Random Forest algorithm was selected as the final model based on three criteria specific to this task: (1) it provides native feature importance scores that align well with SHAP TreeExplainer, which computes exact Shapley values for tree ensembles in polynomial time; (2) it handles high-dimensional tabular data (70 features) without requiring feature scaling; and (3) it is robust to the remaining class imbalance via the class_weight parameter.
+P214 | Align: JUSTIFY (3) | Style: Normal | Text: The final hyperparameter configuration is: n_estimators=100, max_depth=20, class_weight="balanced", random_state=42, n_jobs=-1. The n_estimators=100 was chosen as a balance between training time and ensemble variance reduction; preliminary experiments with 50 trees showed marginally lower F1 on rare classes. max_depth=20 was retained from the default exploration; reducing it below 15 caused noticeable F1 degradation on minority classes.
+P215 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P216 | Align: None | Style: Heading 2 | Text: 4.5 Training Procedure
+P217 | Align: JUSTIFY (3) | Style: Normal | Text: The 2,827,677 clean samples were split 80/20 into training (2,262,141 samples) and test (565,536 samples) sets using stratified sampling (stratify=y) to preserve class proportions in both splits. Random state 42 was fixed throughout for reproducibility. No validation set was used for hyperparameter tuning in this iteration; k-fold cross-validation is listed as future work. The model was trained on the 70-feature training set (after dropping 6 string identifier columns and 8 constant columns from the original 85), fit in approximately 15 minutes on an Intel Core i5 system, and persisted to disk as outputs/models/baseline_rf.pkl using joblib.
+P218 | Align: None | Style: Normal | Text: 
+P219 | Align: None | Style: Normal | Text: 
+P220 | Align: None | Style: Normal | Text: 
+P221 | Align: None | Style: Normal | Text: 
+P222 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P223 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P224 | Align: CENTER (1) | Style: Normal | Text: CHAPTER 5: IMPLEMENTATION
+P225 | Align: None | Style: Heading 2 | Text: 5.1 Module Description
+P226 | Align: None | Style: Normal | Text:  data_loader.py
+P227 | Align: JUSTIFY (3) | Style: Normal | Text: Reads all CSV files from data/raw/ using glob pattern matching, loads each with pandas (encoding="latin-1", low_memory=False), and concatenates them into a single DataFrame. Prints per-file shape and total combined shape. Returns the merged DataFrame to the calling notebook.
+P228 | Align: None | Style: Normal | Text: preprocessor.py
+P229 | Align: JUSTIFY (3) | Style: Normal | Text: Contains clean_data() (strips column name whitespace, replaces Inf with NaN, drops NaN rows and duplicates, removes constant-variance columns), encode_labels() (fits a scikit-learn LabelEncoder on the Label column and returns both the encoded DataFrame and the fitted encoder for later inverse-transform), and split_features_labels() (separates feature matrix X from target vector y).
+P230 | Align: None | Style: Normal | Text: truncator.py
+P231 | Align: JUSTIFY (3) | Style: Normal | Text: Defines CUMULATIVE_FEATURES (the 8 time-varying statistics) and DURATION_FEATURE. truncate_flow() applies the proportional scaling formula to a copy of the input DataFrame. generate_all_windows() produces a dictionary mapping each window value (1, 5, None) to its corresponding truncated DataFrame.
+P232 | Align: None | Style: Normal | Text: model.py
+P233 | Align: JUSTIFY (3) | Style: Normal | Text: build_model() instantiates a RandomForestClassifier with fixed hyperparameters. train_model() calls .fit(). save_model() and load_model() wrap joblib.dump() and joblib.load() respectively.
+P234 | Align: None | Style: Normal | Text: explainer.py
+P235 | Align: JUSTIFY (3) | Style: Normal | Text: compute_shap_values() initialises a shap.TreeExplainer on the trained model and computes SHAP values for a provided sample. plot_summary() calls shap.summary_plot() for a specified class index and saves the output PNG.
+P236 | Align: None | Style: Normal | Text: risk_scorer.py
+P237 | Align: JUSTIFY (3) | Style: Normal | Text: score_alerts() calls model.predict_proba(), extracts the maximum class probability as confidence, inverse-transforms the predicted class index, and assigns risk tiers based on configurable thresholds (default HIGH≥0.80, MEDIUM≥0.50). summarize_alert_queue() prints tier counts and an attack-by-tier cross-tabulation.
+P238 | Align: None | Style: Normal | Text: app.py (Flask Web Interface)
+P239 | Align: JUSTIFY (3) | Style: Normal | Text: A single-file Flask application that loads the trained model and test data at startup. The / route serves an HTML/JS single-page interface. The /detect endpoint accepts a type parameter (attack or benign), randomly selects a flow from the corresponding subset of X_test, runs model.predict() and predict_proba(), assigns a risk tier, and returns a JSON response including predicted label, true label, confidence, risk tier, and top model feature. The frontend renders results as a popup warning dialog and appends to a running detection log.
+P240 | Align: None | Style: Heading 2 | Text: 5.2 Key Code Snippets
+P241 | Align: None | Style: Normal | Text: Snippet 1 — Data Cleaning (preprocessor.py)
+P242 | Align: None | Style: Normal | Text: def clean_data(df):
+P243 | Align: None | Style: Normal | Text:     df.columns = df.columns.str.strip()
+P244 | Align: None | Style: Normal | Text:     df.replace([np.inf, -np.inf], np.nan, inplace=True)
+P245 | Align: None | Style: Normal | Text:     df.dropna(inplace=True)
+P246 | Align: None | Style: Normal | Text:     df.drop_duplicates(inplace=True)
+P247 | Align: None | Style: Normal | Text:     constant_cols = [c for c in df.columns if df[c].nunique() <= 1]
+P248 | Align: None | Style: Normal | Text:     df.drop(columns=constant_cols, inplace=True)
+P249 | Align: None | Style: Normal | Text:     return df
+P250 | Align: None | Style: Normal | Text: 
+P251 | Align: None | Style: Normal | Text: Snippet 2 — Truncated Flow Simulation (truncator.py)
+P252 | Align: None | Style: Normal | Text: def truncate_flow(df, time_window_seconds):
+P253 | Align: None | Style: Normal | Text:     df = df.copy()
+P254 | Align: None | Style: Normal | Text:     time_window_us = time_window_seconds * 1_000_000
+P255 | Align: None | Style: Normal | Text:     scale = (time_window_us / df["Flow Duration"]).clip(upper=1.0)
+P256 | Align: None | Style: Normal | Text:     for feature in CUMULATIVE_FEATURES:
+P257 | Align: None | Style: Normal | Text:         if feature in df.columns:
+P258 | Align: None | Style: Normal | Text:             df[feature] = df[feature] * scale
+P259 | Align: None | Style: Normal | Text:     return df
+P260 | Align: None | Style: Normal | Text: 
+P261 | Align: None | Style: Normal | Text: Snippet 3 — Risk Scoring (risk_scorer.py)
+P262 | Align: None | Style: Normal | Text: def score_alerts(model, X, label_encoder, threshold_high=0.80, threshold_medium=0.50):
+P263 | Align: None | Style: Normal | Text:     probs = model.predict_proba(X)
+P264 | Align: None | Style: Normal | Text:     predicted_class_idx = np.argmax(probs, axis=1)
+P265 | Align: None | Style: Normal | Text:     confidence = np.max(probs, axis=1)
+P266 | Align: None | Style: Normal | Text:     predicted_label = label_encoder.inverse_transform(predicted_class_idx)
+P267 | Align: None | Style: Normal | Text:     risk_tier = ["HIGH" if c >= threshold_high else
+P268 | Align: None | Style: Normal | Text:                  "MEDIUM" if c >= threshold_medium else "LOW"
+P269 | Align: None | Style: Normal | Text:                  for c in confidence]
+P270 | Align: None | Style: Normal | Text:     return pd.DataFrame({"Predicted_Label": predicted_label,
+P271 | Align: None | Style: Normal | Text:                          "Confidence": confidence, "Risk_Tier": risk_tier})
+P272 | Align: None | Style: Normal | Text: 
+P273 | Align: None | Style: Heading 2 | Text: 5.3 User Interface / Demo 
+P274 | Align: JUSTIFY (3) | Style: Normal | Text: [Screenshot(s) of a simple UI, notebook output, or CLI demo, with a one-line caption for each.]
+P275 | Align: JUSTIFY (3) | Style: Normal | Text: Figure 1: Model trained with 0.9931 Accuracy.
+P276 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P277 | Align: JUSTIFY (3) | Style: Normal | Text: Figure 2: Result for Truncation (Detection F1 Score by Attack Type vs Time Window)
+P278 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P279 | Align: JUSTIFY (3) | Style: Normal | Text: Figure3:resultforSHAPexplainability.
+P280 | Align: JUSTIFY (3) | Style: Normal | Text: Figure 4: UI of Network IDS 
+P281 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P282 | Align: JUSTIFY (3) | Style: Normal | Text: Figure 5:AttackDetection by Simulating Attack Flow with RiskScore and SHAP Explainability.
+P283 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P284 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P285 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P286 | Align: JUSTIFY (3) | Style: Normal | Text: Fighure 6:  Attack Detection by Manual Input .
+P287 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P288 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P289 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P290 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P291 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P292 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P293 | Align: CENTER (1) | Style: Heading 1 | Text: CHAPTER 6  
+P294 | Align: CENTER (1) | Style: Heading 1 | Text: RESULTS AND DISCUSSION
+P295 | Align: None | Style: Heading 2 | Text: 6.1 Evaluation Metrics
+P296 | Align: JUSTIFY (3) | Style: Normal | Text: Overall accuracy (correct predictions / total predictions) is reported for context but is not the primary metric, as the severe class imbalance in CICIDS2017 (72.8% BENIGN) means a model predicting BENIGN for every sample would achieve 72.8% accuracy trivially. The primary metrics are per-class precision, recall, and F1-score. F1-score is the harmonic mean of precision and recall, penalising both false positives and false negatives equally, making it appropriate for imbalanced multi-class classification. For the risk scoring evaluation, we report precision of HIGH-tier alerts specifically on non-BENIGN predictions, as this directly measures the operational utility of the alert prioritisation: what fraction of HIGH alerts that an analyst would review are genuine attacks.
+P297 | Align: None | Style: Normal | Text: 
+P298 | Align: None | Style: Heading 2 | Text: 6.2 Results Across Iterations
+P299 | Align: None | Style: Normal | Text: 
+P300 | Align: None | Style: Normal | Text: 
+P301 | Align: None | Style: Normal | Text: Table 6.2 — Per-Class F1 Scores Across Time Windows
+P302 | Align: None | Style: Normal | Text: 
+P303 | Align: None | Style: Normal | Text: 
+P304 | Align: None | Style: Normal | Text: Table 6.3 — Risk Scoring Results (Attack Predictions Only)
+P305 | Align: None | Style: Normal | Text: 
+P306 | Align: None | Style: Heading 2 | Text: 6.3 Discussion
+P307 | Align: JUSTIFY (3) | Style: Normal | Text: The early detection results reveal a clear separation between two categories of attack. Volume-based attacks — DDoS, PortScan, DoS variants — are characterised by abnormally high packet rates and/or large numbers of short connections, making their statistical signature immediately visible even at a 1-second time window. DDoS flows, for instance, exhibit Flow Packets/s values orders of magnitude above normal traffic within the first second, making the F1=0.999 result at the 1-second window unsurprising in retrospect. This finding has direct operational value: SOC playbooks for DDoS response can be triggered within 1 second of flow onset rather than waiting for session termination.
+P308 | Align: JUSTIFY (3) | Style: Normal | Text: Behaviour-based attacks — Infiltration, Web Attack variants — tell a different story. Infiltration achieves F1=0.000 at 1 second: its early statistical profile is indistinguishable from normal BENIGN traffic, only revealing its nature through the full sequence of requests. The jump from 0.400 at 5 seconds to 0.857 at full flow confirms that the discriminating signal accumulates over the course of the session. This has a different operational implication: the system should not be expected to alert on Infiltration early, and a tiered detection strategy (fast-flagging volume attacks, patient monitoring of slow attacks) is more appropriate than a single latency target.
+P309 | Align: JUSTIFY (3) | Style: Normal | Text: The risk scoring results are the most directly actionable. A precision of 99.42% on HIGH-tier alerts means that when the system rates an alert as HIGH, it is correct 994 times out of every 1000 — compared to the overall 20.34% attack rate in the flagged flow set. This is the core alert-fatigue reduction mechanism: by reviewing only HIGH-confidence predictions, an analyst sees a queue that is 99.42% genuine attacks rather than a raw alert stream where 80% of alerts might be false positives. The analyst review burden of 19.7% (HIGH attack alerts / total flows) may seem high but reflects that 20.3% of test traffic was actually attacks — the system is not generating spurious alerts for BENIGN traffic, it is flagging genuine attack flows with high confidence.
+P310 | Align: None | Style: Normal | Text: 
+P311 | Align: None | Style: Heading 2 | Text: 6.4 Limitations
+P312 | Align: None | Style: Normal | Text: 
+P313 | Align: JUSTIFY (3) | Style: Normal | Text:   Several limitations of this study warrant candid acknowledgement. First, all evaluation is conducted on a static pre-recorded dataset (CICIDS2017, July 2017); the model has not been tested on traffic from different networks, time periods, or equipment configurations. Real-world network traffic distributions vary significantly from benchmark datasets. Second, the truncated-flow experiment is a simulation: cumulative features are scaled proportionally by time ratio, which approximates but does not precisely replicate true sub-flow statistics that would be obtained by re-processing raw PCAPs through CICFlowMeter at each time point. Third, minority classes (SQL Injection: 17 test samples, Heartbleed: 2 test samples, Infiltration: 7 test samples) have sample sizes too small for statistically reliable F1 estimates. Fourth, SMOTE-based oversampling was not applied due to memory constraints; class_weight="balanced" partially compensates but cannot generate novel minority-class patterns. Fifth, the SHAP analysis was computed on a 500-flow sample rather than the full test set due to computational cost; larger samples might shift feature rankings marginally.
+P314 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P315 | Align: JUSTIFY (3) | Style: Heading 1 | Text:                                       CHAPTER 7
+P316 | Align: JUSTIFY (3) | Style: Heading 1 | Text:  TEAM REFLECTION AND LEARNING OUTCOMES
+P317 | Align: None | Style: Normal | Text: 
+P318 | Align: None | Style: Heading 2 | Text: 7.1 Individual Reflections
+P319 | Align: JUSTIFY (3) | Style: Normal | Text: Thaniska E : I was responsible for data collection, EDA, and preprocessing. The most challenging part was understanding why SMOTE failed — discovering that generating synthetic samples for 2.2 million rows required 14 GB of RAM was a concrete lesson in the difference between algorithmic correctness and practical scalability. Switching to class_weight="balanced" taught me that problem constraints should shape algorithm choice, not just accuracy targets.
+P320 | Align: JUSTIFY (3) | Style: Normal | Text: Purnima U : I led the model training and the truncation experiment. Designing the truncator.py module required understanding which features accumulate over time versus which are instantaneous — building this distinction forced me to engage with what each CICIDS2017 feature actually measures, not just treat the dataset as an abstract matrix. Seeing DDoS stay at F1=0.999 at the 1-second window while Infiltration dropped to 0.000 was the moment the project felt like it was producing something genuinely informative.
+P321 | Align: None | Style: Heading 2 | Text: 7.2 Team Learning
+P322 | Align: JUSTIFY (3) | Style: Normal | Text: The weekly review structure was effective in keeping the project on track. The most significant direction change from mentor feedback came after Iteration 1, when it was pointed out that a high-accuracy classifier on completed flows is table stakes, not a differentiator. This pushed us to develop the truncation experiment, which became the most distinctive contribution of the project. Dividing responsibility by pipeline stage (data vs. model) worked well because each stage had clear inputs and outputs — the .pkl files saved after each stage meant that rerunning one stage did not require rerunning all previous stages, reducing iteration time significantly. If restarting, we would plan the module interfaces before writing any notebook code, rather than building the src/ files iteratively alongside the notebooks.
+P323 | Align: None | Style: Heading 2 | Text: 7.3 Course Outcomes — Evidence Summary
+P324 | Align: None | Style: Normal | Text:   
+P325 | Align: None | Style: Normal | Text: 
+P326 | Align: None | Style: Normal | Text: 
+P327 | Align: None | Style: Normal | Text: 
+P328 | Align: None | Style: Normal | Text: 
+P329 | Align: None | Style: Normal | Text: 
+P330 | Align: None | Style: Normal | Text: 
+P331 | Align: None | Style: Normal | Text: 
+P332 | Align: None | Style: Normal | Text: 
+P333 | Align: None | Style: Normal | Text: 
+P334 | Align: None | Style: Normal | Text: 
+P335 | Align: None | Style: Normal | Text: 
+P336 | Align: None | Style: Normal | Text: 
+P337 | Align: None | Style: Normal | Text: 
+P338 | Align: None | Style: Normal | Text: 
+P339 | Align: None | Style: Normal | Text: 
+P340 | Align: None | Style: Normal | Text: 
+P341 | Align: None | Style: Normal | Text: 
+P342 | Align: None | Style: Normal | Text: 
+P343 | Align: None | Style: Normal | Text: 
+P344 | Align: None | Style: Normal | Text: 
+P345 | Align: None | Style: Normal | Text: 
+P346 | Align: None | Style: Normal | Text: 
+P347 | Align: None | Style: Normal | Text: 
+P348 | Align: None | Style: Normal | Text: 
+P349 | Align: None | Style: Normal | Text: 
+P350 | Align: None | Style: Normal | Text: 
+P351 | Align: None | Style: Normal | Text: 
+P352 | Align: None | Style: Normal | Text: 
+P353 | Align: None | Style: Normal | Text: 
+P354 | Align: None | Style: Normal | Text: 
+P355 | Align: None | Style: Normal | Text: 
+P356 | Align: None | Style: Normal | Text: 
+P357 | Align: None | Style: Normal | Text: 
+P358 | Align: None | Style: Normal | Text: 
+P359 | Align: None | Style: Normal | Text: 
+P360 | Align: None | Style: Normal | Text: 
+P361 | Align: None | Style: Normal | Text: 
+P362 | Align: None | Style: Normal | Text: 
+P363 | Align: CENTER (1) | Style: Normal | Text: CHAPTER 8
+P364 | Align: CENTER (1) | Style: Normal | Text: CONCLUSION AND FUTURE SCOPE
+P365 | Align: None | Style: Normal | Text: 
+P366 | Align: None | Style: Heading 2 | Text: 8.1 Conclusion
+P367 | Align: JUSTIFY (3) | Style: Normal | Text: This project designed, implemented, and evaluated a flow-level Network Intrusion Detection System combining Random Forest classification, time-windowed early detection, and SHAP-based explainable risk scoring on the CICIDS2017 dataset. The system achieves 99.31% overall accuracy with a macro F1 of 0.81 across 15 attack classes. The early detection experiment demonstrates that volume-based attacks (DDoS, PortScan, DoS variants) are reliably detectable within 1 second of flow onset (F1≥0.994), while behaviour-based attacks (Infiltration, Web Attacks) require full session observation — a finding with direct implications for SOC response time planning. The risk scoring layer achieves 99.42% precision on HIGH-tier alerts, reducing analyst review burden to 19.7% of total traffic and directly addressing the alert-fatigue problem documented in the literature. The driving question — whether ML on flow-level features can enable both early detection and actionable, explainable alerts — is answered affirmatively for the majority of attack classes in the CICIDS2017 benchmark.
+P368 | Align: None | Style: Normal | Text: 
+P369 | Align: None | Style: Heading 2 | Text: 8.2 Future Scope
+P370 | Align: None | Style: List Paragraph | Text:     Integrate with live network packet capture using CICFlowMeter in streaming mode to enable true real-time detection rather than dataset simulation.
+P371 | Align: None | Style: List Paragraph | Text: Replace proportional feature scaling in the truncation experiment with true sub-flow re-extraction from raw PCAP files to eliminate the approximation limitation.
+P372 | Align: None | Style: List Paragraph | Text: Apply k-fold cross-validation and hyperparameter search (grid or Bayesian) to improve minority-class F1 scores, particularly for Bot and Web Attack classes.
+P373 | Align: None | Style: List Paragraph | Text: Investigate deep learning approaches (LSTM, Transformer) for flow classification and compare against Random Forest baseline on both accuracy and early-detection performance.
+P374 | Align: None | Style: List Paragraph | Text: Extend the risk scoring system with contextual factors (source IP reputation, time-of-day baseline, asset criticality) to produce a more nuanced alert priority beyond confidence thresholds.
+P375 | Align: None | Style: List Paragraph | Text: Test the pipeline on more recent IDS datasets (CIC-IDS-2018, UNSW-NB15) to evaluate generalisability beyond CICIDS2017.
+P376 | Align: None | Style: List Paragraph | Text: Deploy the Flask prototype as a containerised microservice (Docker) for integration testing with network monitoring infrastructure.
+P377 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P378 | Align: None | Style: Heading 1 | Text: REFERENCES
+P379 | Align: JUSTIFY (3) | Style: Normal | Text: [1] I. Sharafaldin, A. H. Lashkari, and A. A. Ghorbani, "Toward Generating a New Intrusion Detection Dataset and Intrusion Traffic Characterization," in Proc. 4th Int. Conf. Inf. Syst. Security Privacy (ICISSP), Madeira, Portugal, 2018, pp. 108–116.
+P380 | Align: JUSTIFY (3) | Style: Normal | Text: [2] A. H. Lashkari, G. D. Gil, M. S. I. Mamun, and A. A. Ghorbani, "Characterization of Tor Traffic Using Time Based Features," in Proc. 3rd Int. Conf. Inf. Syst. Security Privacy (ICISSP), Porto, Portugal, 2017.
+P381 | Align: JUSTIFY (3) | Style: Normal | Text: [3] R. Vinayakumar, M. Alazab, K. P. Soman, P. Poornachandran, A. Al-Nemrat, and S. Venkatraman, "Deep Learning Approach for Intelligent Intrusion Detection System," IEEE Access, vol. 7, pp. 41525–41550, 2019.
+P382 | Align: JUSTIFY (3) | Style: Normal | Text: [4] M. Ring, S. Wunderlich, D. Scheuring, D. Landes, and A. Hotho, "A Survey of Network-Based Intrusion Detection Data Sets," Comput. Security, vol. 86, pp. 147–167, 2019.
+P383 | Align: JUSTIFY (3) | Style: Normal | Text: [5] S. M. Lundberg and S.-I. Lee, "A Unified Approach to Interpreting Model Predictions," in Advances in Neural Inf. Process. Syst. (NeurIPS), vol. 30, 2017.
+P384 | Align: JUSTIFY (3) | Style: Normal | Text: [6] N. Veerasamy, "Fatigue in a Security Operations Centre (SOC)," J. Inf. Warf., vol. 19, no. 1, pp. 65–80, 2020.
+P385 | Align: JUSTIFY (3) | Style: Normal | Text: [7] Canadian Institute for Cybersecurity, "CICIDS2017 Dataset," University of New Brunswick, 2017. [Online]. Available: https://www.unb.ca/cic/datasets/ids-2017.html
+P386 | Align: JUSTIFY (3) | Style: Normal | Text: [8] F. Pedregosa et al., "Scikit-learn: Machine Learning in Python," J. Mach. Learn. Res., vol. 12, pp. 2825–2830, 2011.
+P387 | Align: JUSTIFY (3) | Style: Normal | Text: 
+P388 | Align: None | Style: Heading 1 | Text: APPENDIX
+P389 | Align: None | Style: Heading 2 | Text: A.1 Full Source Code
+P390 | Align: None | Style: Normal | Text: Full source code is available at: https://github.com/Purnimauthan?tab=repositories&q=&type=public&language=&sort=
+P391 | Align: JUSTIFY (3) | Style: Normal | Text: Repository structure: src/ (6 Python modules), notebooks/ (6 Jupyter notebooks + prototype_demo), outputs/ (saved model, plots, CSV reports), data/ (processed splits), app.py (Flask web interface), requirements.txt.
+P392 | Align: None | Style: Heading 2 | Text: A.2 Self and Peer Assessment
+P393 | Align: None | Style: Normal | Text: 
+P394 | Align: JUSTIFY (3) | Style: Normal | Text: 
+
+--- TABLE 0 (rows=1, cols=2) ---
+  R0: ['\tSIGNATURE Dr. S. Pavithra, M.E., Ph.D.  Professor and Head, Dept. of Computer Science and Engineering Chennai Institute of Technology,  Chennai – 69.', 'SIGNATURE Dr. T. Vignesh, M.Tech.,Ph.D MENTOR Professor Dept. of Computer Science and Engineering Chennai Institute of Technology,  Chennai – 69.']
+
+--- TABLE 1 (rows=16, cols=2) ---
+  R0: ['Abbreviation', 'Full Form']
+  R1: ['IDS', 'Intrusion Detection System']
+  R2: ['ML', 'Machine Learning']
+  R3: ['PBL', 'Project-Based Learning']
+  R4: ['DDoS', 'Distributed Denial of Service']
+  R5: ['SOC', 'Security Operations Centre']
+  R6: ['SHAP', 'SHapley Additive exPlanations']
+  R7: ['RF', 'Random Forest']
+  R8: ['F1', 'F1-Score (Harmonic Mean of Precision and Recall)']
+  R9: ['EDA', 'Exploratory Data Analysis']
+  R10: ['CSV', 'Comma-Separated Values']
+  R11: ['NaN', 'Not a Number']
+  R12: ['BENIGN', 'Normal / Non-malicious network flow']
+  R13: ['XSS', 'Cross-Site Scripting']
+  R14: ['FTP', 'File Transfer Protocol']
+  R15: ['SSH', 'Secure Shell']
+
+--- TABLE 2 (rows=7, cols=4) ---
+  R0: ['Ref.', 'Approach / Model', 'Dataset', 'Reported Result']
+  R1: ['[1]', ' Random Forest, Decision Tree', 'CICIDS2017', '>97% accuracy']
+  R2: ['[2]', 'Feature selection + RF  ', 'CICIDS2017', '      20 features sufficient']
+  R3: ['[3]', 'LSTM,CNN ', 'NSL-KDD,CICIDS', 'High accuracy']
+  R4: ['[4]', 'Survey:flow anomaly detection', 'Muliple', 'Gap identified']
+  R5: ['[5]', 'SHAP framework', 'Various', 'Unified XAI method']
+  R6: ['[6]', 'SOC alert ', 'Enterprise', '>40% FP rates']
+
+--- TABLE 3 (rows=6, cols=4) ---
+  R0: ['Week', 'Milestone / Task', 'Work Done', 'Mentor Remarks']
+  R1: ['1–2', 'Problem framing, dataset search', 'Problem Formation', 'Completed']
+  R2: ['3–4', 'Concept exploration, baseline plan', 'Literature Review, Dataset Collection', 'Completed']
+  R3: ['5–7', 'Iteration 1 — baseline model', '30% of implementation completed', 'Completed']
+  R4: ['8–10', 'Iteration 2 — refinement', '60% of implementation completed', 'Completed']
+  R5: ['11–12', 'Final evaluation, report, demo', '100% Completed including Documentation', 'Completed']
+
+--- TABLE 4 (rows=8, cols=2) ---
+  R0: ['Category', 'Requirement']
+  R1: ['Processor / RAM', 'intel Core i5 or equivalent / 8 GB RAM minimum (16 GB recommended for full dataset processing)']
+  R2: ['Programming language', 'Python 3.14']
+  R3: ['Libraries ', 'pandas 3.0.3, numpy 2.x, scikit-learn 1.9.0, xgboost 3.3.0, imbalanced-learn 0.14.2']
+  R4: ['Frameworks', 'Flask 3.1.3']
+  R5: ['Development environment', ' Jupyter Notebook 7.x,VS Code ']
+  R6: ['Dataset', 'CICIDS2017']
+  R7: ['Version control', ' Git/GitHub ']
+
+--- TABLE 5 (rows=6, cols=5) ---
+  R0: ['Version', 'Accuracy', 'Macro F1', 'Weighted F1', 'Key Change']
+  R1: ['Iteration 1 (with SMOTE attempt)', 'N/A', 'N/A', 'N/A', 'MemoryError — SMOTE failed on 2.2M rows']
+  R2: ['Iteration 1 (class_weight=balanced)', '99.31%', '0.81', '0.99', 'Baseline — full flow features only']
+  R3: ['Iteration 2 (1s window)', '~99%', '0.77', '0.99', 'Truncated features — time-limited observation']
+  R4: ['Iteration 2 (5s window)', '~99%', '0.80', '0.99', 'More signal — approaching full-flow performance']
+  R5: ['Final (full flow + SHAP + risk scoring)', '99.31%', '0.81', '0.99', 'Complete pipeline with explainability']
+
+--- TABLE 6 (rows=16, cols=5) ---
+  R0: ['Attack Class', '1s Window', '5s Window', 'Full Flow', 'Interpretation']
+  R1: ['BENIGN', '0.995', '0.996', '0.996', 'Consistently high — normal traffic well-characterised']
+  R2: ['DDoS', '0.999', '0.999', '0.999', 'Immediately detectable — high packet rate visible at 1s']
+  R3: ['PortScan', '0.997', '0.997', '0.997', 'Immediately detectable — many short connections visible at 1s']
+  R4: ['DoS Hulk', '0.994', '0.994', '0.994', 'Volume-based — detectable immediately']
+  R5: ['DoS GoldenEye', '0.990', '0.991', '0.991', 'Detectable early — sustained request pattern']
+  R6: ['DoS Slowhttptest', '0.966', '0.965', '0.965', 'Slow attack — still detectable at 1s due to connection pattern']
+  R7: ['DoS slowloris', '0.994', '0.993', '0.993', 'Detectable early despite slow nature']
+  R8: ['FTP-Patator', '0.894', '0.996', '0.996', 'Significant improvement 1s→5s — brute-force builds over time']
+  R9: ['SSH-Patator', '0.998', '0.998', '0.998', 'Highly detectable — clear connection pattern']
+  R10: ['Bot', '0.226', '0.226', '0.226', 'Poor across all windows — insufficient training samples (1,565)']
+  R11: ['Heartbleed', '1.000', '1.000', '1.000', 'Perfect — very distinctive flow pattern']
+  R12: ['Infiltration', '0.000', '0.400', '0.857', 'Needs full flow — slow, mimics normal traffic at 1s']
+  R13: ['Web Attack – Brute Force', '0.297', '0.594', '0.676', 'Improves with time — repeated request pattern emerges']
+  R14: ['Web Attack – XSS', '0.113', '0.394', '0.408', 'Difficult — low training samples, subtle pattern']
+  R15: ['Web Attack – Sql Injection', '0.000', '0.000', '0.000', 'Only 17 test samples — insufficient for evaluation']
+
+--- TABLE 7 (rows=9, cols=2) ---
+  R0: ['Metric', 'Value']
+  R1: ['Total test flows', '565,536']
+  R2: ['Flows predicted as attack (non-BENIGN)', '114,916 (20.3%)']
+  R3: ['Flows predicted as BENIGN', '450,620 (79.7%)']
+  R4: ['HIGH-tier alerts (confidence ≥ 0.80)', '111,359 (96.9% of attack predictions)']
+  R5: ['MEDIUM-tier alerts (0.50 – 0.80)', '3,421 (3.0% of attack predictions)']
+  R6: ['LOW-tier alerts (< 0.50)', '136 (0.1% of attack predictions)']
+  R7: ['Precision of HIGH alerts (true attacks / all HIGH)', '99.42%']
+  R8: ['Analyst review burden (HIGH alerts / total flows)', '19.7%']
+
+--- TABLE 8 (rows=7, cols=2) ---
+  R0: ['Course Outcome', 'Evidence from This Project']
+  R1: ['CO1: Apply ML algorithms to real-world datasets', 'Trained Random Forest on 2.2M-sample CICIDS2017 dataset; evaluated with precision/recall/F1 across 15 classes']
+  R2: ['CO2: Handle data preprocessing and feature engineering', 'Implemented cleaning, encoding, constant-column removal, and class-imbalance handling (Section 4.2, Chapter 5)']
+  R3: ['CO3: Evaluate and compare model performance', 'Results across Iteration 1, 2, and final approach in Table 6.2; three time-window comparisons produce quantitative insights']
+  R4: ['CO4: Apply explainability techniques', 'SHAP TreeExplainer integrated; summary plots generated for DDoS and PortScan attack classes']
+  R5: ['CO5: Work collaboratively through iterative development', 'Weekly PBL progress log (Table 3.1); two-person role division with clear stage-based responsibilities']
+  R6: ['CO6: Communicate technical findings', 'PBL report, PPT, and Flask prototype demo all prepared; risk scoring output designed for non-technical SOC audience']
+
+--- TABLE 9 (rows=4, cols=4) ---
+  R0: ['Team Member', 'Self-Rated Contribution (%)', 'Peer-Rated Contribution (%)', 'Remarks']
+  R1: ['Purnima U', '45', '45', 'Completed']
+  R2: ['Thaniska E', '30', '30', 'Completed']
+  R3: ['Swasi MKS', '25', '25', 'Completed']

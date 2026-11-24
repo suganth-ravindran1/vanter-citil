@@ -1,0 +1,397 @@
+[0] 
+[1] EARLY DETECTION AND EXPLAINABLE RISK SCORING IN NETWORK INTRUSION DETECTION SYSTEMS USING 
+[2] RANDOM FOREST ALGORITHM
+[3] 
+[4] A PROJECT BASED LEARNING (PBL) REPORT
+[5] Submitted by 
+[6] PURNIMA U
+[7] THANISKA E
+[8] SWASI M K S 
+[9] 
+[10] Submitted in partial fulfilment of the requirements 
+[11] for the 
+Project-Based Learning component of Machine Learning
+[12] BACHELOR OF ENGINEERING
+[13] 
+[14] in
+[15] 
+[16] COMPUTER SCIENCE AND ENGINEERING
+[17] 
+[18] 
+[19] 
+[20] CHENNAI INSTITUTE OF TECHNOLOGY, CHENNAI
+[21] 
+[22] Affiliated to Anna University, Chennai
+[23] (Autonomous)
+[24] OCTOBER 2026
+[25] 
+[26] Vision of the Institute:
+[27] 
+[28] 
+[29] 
+[30] Mission of the Institute:
+[31] 
+[32] 
+[33] 
+[34] 
+[35] 
+[36] 
+[37] 
+[38] 
+[39] 
+[40] 
+[41] 
+[42] 
+[43] 
+[44]                                              DEPARTMENT OF 
+[45] COMPUTER SCIENCE AND ENGINEERING
+[46] 
+[47] Vision of the Department:
+[48] 
+[49] 
+[50] 
+[51] Mission of the Department:
+[52] 
+[53] 
+[54] 
+[55] 
+[56] BONAFIDE CERTIFICATE
+[57] 
+[58] 
+[59] This is to certify that the Project–Based Learning report titled “Early Detection and Explainable Network Intrusion Detection System” is a Bonafide record of work carried out by Purnima U – 2104251040723, Thaniska E – 2104251041034 and SWASI M K S - 2104251043025   of the Department of Computer Science and Engineering, Chennai Institute of Technology, as part of the continuous, mentor–guided Project-Based Learning (PBL) component of the Machine Learning course during the academic year [2026–2027] under my supervision.
+[60] 
+[61] 
+[62] 
+[63] 
+[64] 
+[65] 
+[66] 
+[67] 
+[68] Submitted for the final review held on …………………….
+[69] 
+[70] 
+[71] 
+[72] 
+[73] Internal Examiner
+[74] 
+[75] DECLARATION
+[76] I/We jointly declare that the PBL report on “Early Detection and Explainable Network Intrusion Detection System” is the result of original work done by us and best of our knowledge, similar work has not been submitted to “ANNA UNIVERSITY, CHENNAI” for the requirement of Degree of BACHELOR OF ENGINEERING. This PBL report is submitted on the partial fulfilment of the requirement of the award of Degree of COMPUTER SCIENCE AND ENGINEERING.
+[77] 
+[78] 
+[79] 
+[80] Signature
+[81] 
+[82] Purnima U
+[83] Swasi MKS
+[84] Thaniska E
+[85] 
+[86] Place: Chennai
+Date:  
+[87] 
+[88] ACKNOWLEDGEMENT
+[89] We wish to express our sincere gratitude to our honorable Chairman SHRI. P. SRIRAM for providing immense facilities at our institution.
+[90] 
+[91] We are very proudly rendering our thanks to our Principal Dr.A.RAMESH M.E, Ph.D., for the facilities and the encouragement given by him to the progress and completion of our project.
+[92] We would like to express special thanks of gratitude to our Dean Dr. V. SRINIVASA RAO, M.E., Ph.D., who has been the key spring of motivation to us throughout the completion of our course and project work.
+[93] We proudly render our immense gratitude to the Head of the Department Dr. S. PAVITHRA	M.E,	Ph.D., for her effective leadership, encouragement and guidance in the project.
+[94] We would like to extend our thanks to t h e Project Co-ordinator Dr.T. Vignesh M.Tech.,Ph.D  Department of Computer Science and Engineering, for their valuable suggestions throughout this project.
+[95] We wish to acknowledge the help received from the class advisors Dr.Ayeesha Nasreen M.E,Ph.D.,  of the Department of Computer Science and Engineering and others for providing valuable suggestions and for the successful completion of the project.
+[96] 
+[97] 
+[98] 
+[99] 
+[100] PURNIMA U(2104251040723)
+[101] THANISKA E(2104251041034)
+[102] SWASI M K S(2104251043025)
+[103] ABSTRACT
+[104] 
+[105] Traditional network intrusion detection systems classify traffic only upon session completion, delaying response to fast-onset attacks such as Distributed Denial of Service (DDoS) and brute-force attempts, while binary alert outputs contribute significantly to analyst alert fatigue in Security Operations Centre (SOC) environments. We propose a flow-level IDS using a Random Forest classifier trained on the CICIDS2017 dataset — comprising 3,119,345 labeled network flows across 15 attack classes — augmented with two novel contributions: time-windowed early detection that evaluates classification performance at 1-second and 5-second partial-flow windows, and SHAP-based explainable risk scoring that converts model confidence scores into actionable HIGH, MEDIUM, and LOW alert tiers with per-prediction feature attribution. Our model achieves 99.31% overall accuracy; volume-based attacks (DDoS, PortScan) are reliably detected within 1 second of flow onset (F1=0.999), while HIGH-tier risk alerts achieve 99.42% precision, reducing analyst review burden to 20.3% of total network traffic. These results demonstrate that combining early detection with explainability directly addresses two documented SOC operational pain points without requiring deep packet inspection or live traffic capture.
+[106] 
+[107] Keywords: Network Intrusion Detection, Random Forest, CICIDS2017, Early Detection, SHAP, Alert Fatigue, Risk Scoring, Flow-Level Features
+[108] TABLE OF CONTENTS
+[109] 
+[110] 
+[111] 
+[112] LIST OF FIGURES
+[113] 
+[114] Figure 1.1 [Title] ....................................................... [11]
+[115] Figure 4.1 System architecture diagram ................... [16]
+[116] Figure 6.1 [Result chart / confusion matrix] ............. [24]
+[117] 
+[118] 
+[119] 
+[120] 
+[121] LIST OF TABLES
+[122] 
+[123] Table 3.1 Weekly PBL progress log .......................... [15]
+[124] Table 3.2 Hardware and software requirements ........ [15]
+[125] Table 6.1 Model evaluation results ........................... [24]
+[126]  
+[127] 
+[128] 
+[129] 
+[130] 
+[131] 
+[132] 
+[133] 
+[134] LIST OF ABBREVIATIONS
+[135] 
+[136] 
+[137] CHAPTER 1
+[138] INTRODUCTION
+[139] Background
+[140] The rapid growth of internet-connected systems has made network security one of the most critical concerns for organisations of all sizes. Cyberattacks including Distributed Denial of Service (DDoS) floods, port scanning, brute-force credential attacks, botnet command traffic, and web application exploits cause billions of dollars in damages annually and disrupt services that millions of users depend on. The increasing volume and sophistication of these attacks make manual monitoring infeasible, driving demand for automated Intrusion Detection Systems (IDS) that can identify malicious traffic without human intervention[1]. Traditional IDS solutions fall into two categories: signature-based systems, which match traffic against known attack patterns, and anomaly-based systems, which flag deviations from a baseline of normal behaviour. Signature-based systems are effective against known attacks but fail against novel or zero-day threats. Anomaly-based systems are more general but suffer from high false positive rates. The widespread adoption of encrypted traffic protocols (HTTPS, TLS, VPN) has further limited payload-inspection approaches, as encrypted content cannot be directly analysed. This shift has pushed the field toward flow-level feature analysis — examining the statistical properties of network conversations (packet timing, size, rate, flag counts) rather than their content, which remains effective even on encrypted traffic. Machine learning-based IDS trained on flow-level features have shown strong performance on benchmark datasets. However, most existing work stops at reporting high accuracy on completed network flows — a limitation that does not reflect real SOC operational requirements. Security analysts need to know: (1) how quickly can an attack be flagged, not just whether it can be flagged after the fact, and (2) why is the system raising this alert, not just that it is. This project directly targets both gaps.
+[141] Driving Question
+[142] “Can a machine learning model trained on flow-level network statistics reliably detect different attack types before a network session completes, and can its predictions be made explainable and actionable enough to reduce alert fatigue in a Security Operations Centre environment?”
+[143] 
+[144]  More specifically: given the 85 flow-level features provided by the CICIDS2017 dataset, we investigate whether (a) truncating cumulative flow features at sub-session time windows (1 second, 5 seconds) retains sufficient discriminating signal to identify attack type early, and (b) converting model confidence scores into ranked risk tiers accompanied by SHAP feature attributions produces outputs that are more operationally useful than binary attack/benign labels.
+[145] Objectives
+[146] To collect, merge, and preprocess the CICIDS2017 dataset (8 CSV files, 3.1M rows, 85 features) for multi-class attack classification. 
+[147] To design and train a Random Forest classifier for 15-class network flow classification with class-imbalance handling via class_weight="balanced". 
+[148] To implement a time-windowed early detection experiment by simulating partial flow observation at 1-second and 5-second windows through proportional feature scaling. 
+[149] To integrate SHAP TreeExplainer for per-prediction feature attribution, identifying which flow statistics drive each alert. 
+[150] To design a three-tier risk scoring system (HIGH/MEDIUM/LOW) based on model prediction confidence, and evaluate its precision in reducing analyst review burden.
+[151]  To build a Flask-based web prototype demonstrating the end-to-end pipeline from flow input to alert output with risk tier and explanation.
+[152] 1.4 Scope and Limitations
+[153] This project operates entirely on the CICIDS2017 benchmark dataset — pre-recorded, labeled network flow statistics extracted using CICFlowMeter. The scope includes multi-class attack classification, time-windowed early detection simulation, SHAP explainability, and risk scored alert generation. The system is implemented as an offline prototype with a Flask web interface for demonstration purposes. The following are explicitly out of scope: live network packet capture or real-time traffic processing; deep packet inspection or payload-level analysis; adversarial robustness testing; deployment on a production network; and evaluation on datasets other than CICIDS2017. The truncated-flow experiment approximates partial flow observation by scaling cumulative features proportionally — this is a simulation, not true sub-flow re-extraction from raw PCAPs. These limitations are documented in detail in Section 6.4. 
+[154] CHAPTER 2
+[155] CONCEPT EXPLORATION
+[156] 2.1 Related Approaches
+[157] 2.1.1 Classical Machine Learning for IDS 
+[158] Sharafaldin et al. [1] introduced the CICIDS2017 dataset and demonstrated baseline classification using Random Forest and other classical ML algorithms, reporting accuracy above 97% on individual attack categories. Their work established the dataset as the de facto benchmark for flow-level IDS research, but evaluated only on completed flows without considering detection speed. Lashkari et al. [2] used the same dataset with a focus on feature selection, demonstrating that a subset of 20 features retained near-full classification performance, reducing computational overhead — a finding relevant to real-time deployment but not explored in the early-detection context.
+[159]  2.1.2 Deep Learning Approaches 
+[160] Vinayakumar et al. [3] applied deep neural networks including LSTM and CNN architectures to network intrusion detection, arguing that temporal dependencies in packet sequences provide richer signal than static flow statistics. While achieving strong accuracy, these approaches require substantially more computational resources and training data than classical ML, making them less practical for resource-constrained deployments. Additionally, their black-box nature makes explainability — a key requirement for SOC integration — difficult to achieve without additional post-hoc methods.
+[161]  2.1.3 Early and Incremental Detection
+[162]  Early detection in network security has been studied in the context of DDoS mitigation, where response time is critical. Ring et al. [4] surveyed flow-based anomaly detection methods and noted that most academic benchmarks assume full-flow feature availability, creating a gap between reported performance and deployable performance. Work on early traffic classification — primarily in the Quality of Service domain — has shown that the first few packets of a flow carry disproportionate discriminating information for common traffic types, supporting our hypothesis that fast-onset attacks may be detectable early.
+[163]  2.1.4 Explainable AI in Cybersecurity
+[164]  Lundberg and Lee [5] introduced SHAP (SHapley Additive exPlanations), providing a unified framework for interpreting any ML model prediction in terms of feature contributions. Subsequent work applying SHAP to network security (including IDS) has shown that flow level features such as packet rate, flow duration, and flag counts are consistently the most influential predictors across attack types, aligning with domain knowledge about how different attacks manifest in network behaviour. 
+[165] 2.1.5 Alert Fatigue in SOC Environments 
+[166] Veerasamy et al. [6] documented that SOC analysts in enterprise environments face thousands of undifferentiated alerts daily, with false positive rates in commercial IDS products frequently exceeding 40%. The resulting analyst fatigue leads to genuine threats being overlooked due to volume overload. Risk-ranked alert prioritisation — assigning severity scores to alerts based on confidence and context — has been proposed as a mitigation, but implementations in academic IDS prototypes remain sparse.
+[167] 2.2 Summary Table
+[168] 
+[169] 2.3 What This Told Us
+[170] The literature confirmed that Random Forest on CICIDS2017 is a well-validated baseline achieving strong performance, making it an appropriate starting point for our Iteration 1. The key insight from our exploration was that no existing student-level or accessible implementation combines time-windowed early detection with SHAP explainability and risk scoring on CICIDS2017 — each component exists in isolation in the literature, but not together. This gap defined our differentiating contributions. We chose Random Forest over deep learning specifically because (a) it provides native feature importance compatible with SHAP TreeExplainer, (b) it is interpretable by construction (individual trees are human-readable), and (c) it trains in practical time on our hardware without GPU acceleration.
+[171] CHAPTER 3 
+[172]          PROJECT PLANNING AND TEAM ORGANISATION
+[173] 3.1 Weekly PBL Progress Log
+[174] 
+[175] 
+[176] 3.2 Requirements
+[177] 
+[178] 3.3 Feasibility
+[179] The project is achievable within the six-week PBL timeframe using a standard student laptop. The CICIDS2017 dataset is publicly available at no cost, and all required libraries are open source. The most computationally intensive step — Random Forest training on 2.2 million samples — completes in approximately 15 minutes on a mid-range CPU (Intel i5, 8GB RAM) without GPU acceleration, making the project feasible without cloud computing resources. The Flask prototype runs locally and requires no server infrastructure. The scope explicitly excludes live traffic capture and deep packet inspection, keeping the implementation within the capabilities of a two-person student team over six weeks. 
+[180] CHAPTER 4
+[181]  ITERATIVE DESIGN AND DEVELOPMENT
+[182] 4.1 System Architecture
+[183] Figure 4.1 — System architecture diagram
+[184] 
+[185] 
+[186] 
+[187] 
+[188] 
+[189] 
+[190] The src/ directory contains six reusable Python modules: 
+[191] data_loader.py (CSV ingestion), 
+[192] preprocessor.py (cleaning, encoding, splitting), 
+[193] truncator.py (time-window simulation),
+[194] model.py (Random Forest construction, persistence),                             
+[195] explainer.py (SHAP integration),                                                                                          
+[196] risk_scorer.py (confidence-to-tier conversion).
+[197]  Six Jupyter notebooks drive each stage of the pipeline, with intermediate outputs saved as .pkl and .csv files to decouple stages and avoid re-running expensive steps.
+[198] 4.2 Iteration 1 — Baseline
+[199] 
+[200] Iteration 1 targeted a working multi-class classifier on the full CICIDS2017 dataset. The initial attempt loaded all 8 CSV files (3,119,345 rows, 85 columns) and immediately attempted to train a Random Forest without preprocessing. This failed due to: (1) UnicodeDecodeError from UTF-8 incompatible characters in the Thursday WebAttacks CSV (resolved by switching to latin-1 encoding); (2) ValueError from non-numeric string columns (Flow ID, Source IP, Destination IP, Timestamp) that SMOTE and sklearn cannot process; and (3) NaN/Infinity values in Flow Bytes/s and Flow Packets/s from zero-duration flows causing division by zero.
+[201] After cleaning (291,469 rows removed, 8 constant columns dropped, 6 string columns dropped), a Random Forest with default parameters achieved 99.31% accuracy but showed poor F1 on minority classes (Bot: 0.23, Web XSS: 0.41). An attempt to apply SMOTE to the 2.2M-row training set resulted in a MemoryError (system attempted to allocate 14.2 GiB). The resolution was to use class_weight="balanced" in the Random Forest constructor, which internally adjusts sample weights to compensate for imbalance without generating synthetic samples.
+[202] 
+[203] 4.3 Iteration 2 — Early Detection Refinement
+[204] 
+[205] Mentor feedback after Iteration 1 highlighted that a 99% accurate classifier on completed flows, while technically correct, does not differentiate the project from existing CICIDS2017
+[206] notebooks. Iteration 2 added the time-windowed early detection experiment. The truncator.py module implements proportional scaling of cumulative features:
+[207] scale = min(time_window_microseconds, flow_duration) / flow_duration
+[208] truncated_feature = original_feature × scale
+[209] 
+[210] This was applied to 8 cumulative features (Total Fwd/Bwd Packets, Total Length of Fwd/Bwd Packets, Fwd/Bwd Packets/s, Flow Bytes/s, Flow Packets/s) across three time windows: 1 second, 5 seconds, and the full flow. Duration-independent features (packet length means, flag counts, IAT statistics) were left unchanged, as they do not accumulate over time. The same trained Iteration 1 model was evaluated on each windowed version of the test set, producing per-class F1 scores at each window. This approach is a simulation — not true re-extraction from PCAPs — which is acknowledged as a limitation in Section 6.4.
+[211] 
+[212] 4.4 Final Approach
+[213] The final system combines the Iteration 2 classifier with two additional components: SHAP-based feature attribution and confidence-based risk scoring. The Random Forest algorithm was selected as the final model based on three criteria specific to this task: (1) it provides native feature importance scores that align well with SHAP TreeExplainer, which computes exact Shapley values for tree ensembles in polynomial time; (2) it handles high-dimensional tabular data (70 features) without requiring feature scaling; and (3) it is robust to the remaining class imbalance via the class_weight parameter.
+[214] The final hyperparameter configuration is: n_estimators=100, max_depth=20, class_weight="balanced", random_state=42, n_jobs=-1. The n_estimators=100 was chosen as a balance between training time and ensemble variance reduction; preliminary experiments with 50 trees showed marginally lower F1 on rare classes. max_depth=20 was retained from the default exploration; reducing it below 15 caused noticeable F1 degradation on minority classes.
+[215] 
+[216] 4.5 Training Procedure
+[217] The 2,827,677 clean samples were split 80/20 into training (2,262,141 samples) and test (565,536 samples) sets using stratified sampling (stratify=y) to preserve class proportions in both splits. Random state 42 was fixed throughout for reproducibility. No validation set was used for hyperparameter tuning in this iteration; k-fold cross-validation is listed as future work. The model was trained on the 70-feature training set (after dropping 6 string identifier columns and 8 constant columns from the original 85), fit in approximately 15 minutes on an Intel Core i5 system, and persisted to disk as outputs/models/baseline_rf.pkl using joblib.
+[218] 
+[219] 
+[220] 
+[221] 
+[222] 
+[223] 
+[224] CHAPTER 5: IMPLEMENTATION
+[225] 5.1 Module Description
+[226]  data_loader.py
+[227] Reads all CSV files from data/raw/ using glob pattern matching, loads each with pandas (encoding="latin-1", low_memory=False), and concatenates them into a single DataFrame. Prints per-file shape and total combined shape. Returns the merged DataFrame to the calling notebook.
+[228] preprocessor.py
+[229] Contains clean_data() (strips column name whitespace, replaces Inf with NaN, drops NaN rows and duplicates, removes constant-variance columns), encode_labels() (fits a scikit-learn LabelEncoder on the Label column and returns both the encoded DataFrame and the fitted encoder for later inverse-transform), and split_features_labels() (separates feature matrix X from target vector y).
+[230] truncator.py
+[231] Defines CUMULATIVE_FEATURES (the 8 time-varying statistics) and DURATION_FEATURE. truncate_flow() applies the proportional scaling formula to a copy of the input DataFrame. generate_all_windows() produces a dictionary mapping each window value (1, 5, None) to its corresponding truncated DataFrame.
+[232] model.py
+[233] build_model() instantiates a RandomForestClassifier with fixed hyperparameters. train_model() calls .fit(). save_model() and load_model() wrap joblib.dump() and joblib.load() respectively.
+[234] explainer.py
+[235] compute_shap_values() initialises a shap.TreeExplainer on the trained model and computes SHAP values for a provided sample. plot_summary() calls shap.summary_plot() for a specified class index and saves the output PNG.
+[236] risk_scorer.py
+[237] score_alerts() calls model.predict_proba(), extracts the maximum class probability as confidence, inverse-transforms the predicted class index, and assigns risk tiers based on configurable thresholds (default HIGH≥0.80, MEDIUM≥0.50). summarize_alert_queue() prints tier counts and an attack-by-tier cross-tabulation.
+[238] app.py (Flask Web Interface)
+[239] A single-file Flask application that loads the trained model and test data at startup. The / route serves an HTML/JS single-page interface. The /detect endpoint accepts a type parameter (attack or benign), randomly selects a flow from the corresponding subset of X_test, runs model.predict() and predict_proba(), assigns a risk tier, and returns a JSON response including predicted label, true label, confidence, risk tier, and top model feature. The frontend renders results as a popup warning dialog and appends to a running detection log.
+[240] 5.2 Key Code Snippets
+[241] Snippet 1 — Data Cleaning (preprocessor.py)
+[242] def clean_data(df):
+[243]     df.columns = df.columns.str.strip()
+[244]     df.replace([np.inf, -np.inf], np.nan, inplace=True)
+[245]     df.dropna(inplace=True)
+[246]     df.drop_duplicates(inplace=True)
+[247]     constant_cols = [c for c in df.columns if df[c].nunique() <= 1]
+[248]     df.drop(columns=constant_cols, inplace=True)
+[249]     return df
+[250] 
+[251] Snippet 2 — Truncated Flow Simulation (truncator.py)
+[252] def truncate_flow(df, time_window_seconds):
+[253]     df = df.copy()
+[254]     time_window_us = time_window_seconds * 1_000_000
+[255]     scale = (time_window_us / df["Flow Duration"]).clip(upper=1.0)
+[256]     for feature in CUMULATIVE_FEATURES:
+[257]         if feature in df.columns:
+[258]             df[feature] = df[feature] * scale
+[259]     return df
+[260] 
+[261] Snippet 3 — Risk Scoring (risk_scorer.py)
+[262] def score_alerts(model, X, label_encoder, threshold_high=0.80, threshold_medium=0.50):
+[263]     probs = model.predict_proba(X)
+[264]     predicted_class_idx = np.argmax(probs, axis=1)
+[265]     confidence = np.max(probs, axis=1)
+[266]     predicted_label = label_encoder.inverse_transform(predicted_class_idx)
+[267]     risk_tier = ["HIGH" if c >= threshold_high else
+[268]                  "MEDIUM" if c >= threshold_medium else "LOW"
+[269]                  for c in confidence]
+[270]     return pd.DataFrame({"Predicted_Label": predicted_label,
+[271]                          "Confidence": confidence, "Risk_Tier": risk_tier})
+[272] 
+[273] 5.3 User Interface / Demo 
+[274] [Screenshot(s) of a simple UI, notebook output, or CLI demo, with a one-line caption for each.]
+[275] Figure 1: Model trained with 0.9931 Accuracy.
+[276] 
+[277] Figure 2: Result for Truncation (Detection F1 Score by Attack Type vs Time Window)
+[278] 
+[279] Figure3:resultforSHAPexplainability.
+[280] Figure 4: UI of Network IDS 
+[281] 
+[282] Figure 5:AttackDetection by Simulating Attack Flow with RiskScore and SHAP Explainability.
+[283] 
+[284] 
+[285] 
+[286] Fighure 6:  Attack Detection by Manual Input .
+[287] 
+[288] 
+[289] 
+[290] 
+[291] 
+[292] 
+[293] CHAPTER 6  
+[294] RESULTS AND DISCUSSION
+[295] 6.1 Evaluation Metrics
+[296] Overall accuracy (correct predictions / total predictions) is reported for context but is not the primary metric, as the severe class imbalance in CICIDS2017 (72.8% BENIGN) means a model predicting BENIGN for every sample would achieve 72.8% accuracy trivially. The primary metrics are per-class precision, recall, and F1-score. F1-score is the harmonic mean of precision and recall, penalising both false positives and false negatives equally, making it appropriate for imbalanced multi-class classification. For the risk scoring evaluation, we report precision of HIGH-tier alerts specifically on non-BENIGN predictions, as this directly measures the operational utility of the alert prioritisation: what fraction of HIGH alerts that an analyst would review are genuine attacks.
+[297] 
+[298] 6.2 Results Across Iterations
+[299] 
+[300] 
+[301] Table 6.2 — Per-Class F1 Scores Across Time Windows
+[302] 
+[303] 
+[304] Table 6.3 — Risk Scoring Results (Attack Predictions Only)
+[305] 
+[306] 6.3 Discussion
+[307] The early detection results reveal a clear separation between two categories of attack. Volume-based attacks — DDoS, PortScan, DoS variants — are characterised by abnormally high packet rates and/or large numbers of short connections, making their statistical signature immediately visible even at a 1-second time window. DDoS flows, for instance, exhibit Flow Packets/s values orders of magnitude above normal traffic within the first second, making the F1=0.999 result at the 1-second window unsurprising in retrospect. This finding has direct operational value: SOC playbooks for DDoS response can be triggered within 1 second of flow onset rather than waiting for session termination.
+[308] Behaviour-based attacks — Infiltration, Web Attack variants — tell a different story. Infiltration achieves F1=0.000 at 1 second: its early statistical profile is indistinguishable from normal BENIGN traffic, only revealing its nature through the full sequence of requests. The jump from 0.400 at 5 seconds to 0.857 at full flow confirms that the discriminating signal accumulates over the course of the session. This has a different operational implication: the system should not be expected to alert on Infiltration early, and a tiered detection strategy (fast-flagging volume attacks, patient monitoring of slow attacks) is more appropriate than a single latency target.
+[309] The risk scoring results are the most directly actionable. A precision of 99.42% on HIGH-tier alerts means that when the system rates an alert as HIGH, it is correct 994 times out of every 1000 — compared to the overall 20.34% attack rate in the flagged flow set. This is the core alert-fatigue reduction mechanism: by reviewing only HIGH-confidence predictions, an analyst sees a queue that is 99.42% genuine attacks rather than a raw alert stream where 80% of alerts might be false positives. The analyst review burden of 19.7% (HIGH attack alerts / total flows) may seem high but reflects that 20.3% of test traffic was actually attacks — the system is not generating spurious alerts for BENIGN traffic, it is flagging genuine attack flows with high confidence.
+[310] 
+[311] 6.4 Limitations
+[312] 
+[313]   Several limitations of this study warrant candid acknowledgement. First, all evaluation is conducted on a static pre-recorded dataset (CICIDS2017, July 2017); the model has not been tested on traffic from different networks, time periods, or equipment configurations. Real-world network traffic distributions vary significantly from benchmark datasets. Second, the truncated-flow experiment is a simulation: cumulative features are scaled proportionally by time ratio, which approximates but does not precisely replicate true sub-flow statistics that would be obtained by re-processing raw PCAPs through CICFlowMeter at each time point. Third, minority classes (SQL Injection: 17 test samples, Heartbleed: 2 test samples, Infiltration: 7 test samples) have sample sizes too small for statistically reliable F1 estimates. Fourth, SMOTE-based oversampling was not applied due to memory constraints; class_weight="balanced" partially compensates but cannot generate novel minority-class patterns. Fifth, the SHAP analysis was computed on a 500-flow sample rather than the full test set due to computational cost; larger samples might shift feature rankings marginally.
+[314] 
+[315]                                       CHAPTER 7
+[316]  TEAM REFLECTION AND LEARNING OUTCOMES
+[317] 
+[318] 7.1 Individual Reflections
+[319] Thaniska E : I was responsible for data collection, EDA, and preprocessing. The most challenging part was understanding why SMOTE failed — discovering that generating synthetic samples for 2.2 million rows required 14 GB of RAM was a concrete lesson in the difference between algorithmic correctness and practical scalability. Switching to class_weight="balanced" taught me that problem constraints should shape algorithm choice, not just accuracy targets.
+[320] Purnima U : I led the model training and the truncation experiment. Designing the truncator.py module required understanding which features accumulate over time versus which are instantaneous — building this distinction forced me to engage with what each CICIDS2017 feature actually measures, not just treat the dataset as an abstract matrix. Seeing DDoS stay at F1=0.999 at the 1-second window while Infiltration dropped to 0.000 was the moment the project felt like it was producing something genuinely informative.
+[321] 7.2 Team Learning
+[322] The weekly review structure was effective in keeping the project on track. The most significant direction change from mentor feedback came after Iteration 1, when it was pointed out that a high-accuracy classifier on completed flows is table stakes, not a differentiator. This pushed us to develop the truncation experiment, which became the most distinctive contribution of the project. Dividing responsibility by pipeline stage (data vs. model) worked well because each stage had clear inputs and outputs — the .pkl files saved after each stage meant that rerunning one stage did not require rerunning all previous stages, reducing iteration time significantly. If restarting, we would plan the module interfaces before writing any notebook code, rather than building the src/ files iteratively alongside the notebooks.
+[323] 7.3 Course Outcomes — Evidence Summary
+[324]   
+[325] 
+[326] 
+[327] 
+[328] 
+[329] 
+[330] 
+[331] 
+[332] 
+[333] 
+[334] 
+[335] 
+[336] 
+[337] 
+[338] 
+[339] 
+[340] 
+[341] 
+[342] 
+[343] 
+[344] 
+[345] 
+[346] 
+[347] 
+[348] 
+[349] 
+[350] 
+[351] 
+[352] 
+[353] 
+[354] 
+[355] 
+[356] 
+[357] 
+[358] 
+[359] 
+[360] 
+[361] 
+[362] 
+[363] CHAPTER 8
+[364] CONCLUSION AND FUTURE SCOPE
+[365] 
+[366] 8.1 Conclusion
+[367] This project designed, implemented, and evaluated a flow-level Network Intrusion Detection System combining Random Forest classification, time-windowed early detection, and SHAP-based explainable risk scoring on the CICIDS2017 dataset. The system achieves 99.31% overall accuracy with a macro F1 of 0.81 across 15 attack classes. The early detection experiment demonstrates that volume-based attacks (DDoS, PortScan, DoS variants) are reliably detectable within 1 second of flow onset (F1≥0.994), while behaviour-based attacks (Infiltration, Web Attacks) require full session observation — a finding with direct implications for SOC response time planning. The risk scoring layer achieves 99.42% precision on HIGH-tier alerts, reducing analyst review burden to 19.7% of total traffic and directly addressing the alert-fatigue problem documented in the literature. The driving question — whether ML on flow-level features can enable both early detection and actionable, explainable alerts — is answered affirmatively for the majority of attack classes in the CICIDS2017 benchmark.
+[368] 
+[369] 8.2 Future Scope
+[370]     Integrate with live network packet capture using CICFlowMeter in streaming mode to enable true real-time detection rather than dataset simulation.
+[371] Replace proportional feature scaling in the truncation experiment with true sub-flow re-extraction from raw PCAP files to eliminate the approximation limitation.
+[372] Apply k-fold cross-validation and hyperparameter search (grid or Bayesian) to improve minority-class F1 scores, particularly for Bot and Web Attack classes.
+[373] Investigate deep learning approaches (LSTM, Transformer) for flow classification and compare against Random Forest baseline on both accuracy and early-detection performance.
+[374] Extend the risk scoring system with contextual factors (source IP reputation, time-of-day baseline, asset criticality) to produce a more nuanced alert priority beyond confidence thresholds.
+[375] Test the pipeline on more recent IDS datasets (CIC-IDS-2018, UNSW-NB15) to evaluate generalisability beyond CICIDS2017.
+[376] Deploy the Flask prototype as a containerised microservice (Docker) for integration testing with network monitoring infrastructure.
+[377] 
+[378] REFERENCES
+[379] [1] I. Sharafaldin, A. H. Lashkari, and A. A. Ghorbani, "Toward Generating a New Intrusion Detection Dataset and Intrusion Traffic Characterization," in Proc. 4th Int. Conf. Inf. Syst. Security Privacy (ICISSP), Madeira, Portugal, 2018, pp. 108–116.
+[380] [2] A. H. Lashkari, G. D. Gil, M. S. I. Mamun, and A. A. Ghorbani, "Characterization of Tor Traffic Using Time Based Features," in Proc. 3rd Int. Conf. Inf. Syst. Security Privacy (ICISSP), Porto, Portugal, 2017.
+[381] [3] R. Vinayakumar, M. Alazab, K. P. Soman, P. Poornachandran, A. Al-Nemrat, and S. Venkatraman, "Deep Learning Approach for Intelligent Intrusion Detection System," IEEE Access, vol. 7, pp. 41525–41550, 2019.
+[382] [4] M. Ring, S. Wunderlich, D. Scheuring, D. Landes, and A. Hotho, "A Survey of Network-Based Intrusion Detection Data Sets," Comput. Security, vol. 86, pp. 147–167, 2019.
+[383] [5] S. M. Lundberg and S.-I. Lee, "A Unified Approach to Interpreting Model Predictions," in Advances in Neural Inf. Process. Syst. (NeurIPS), vol. 30, 2017.
+[384] [6] N. Veerasamy, "Fatigue in a Security Operations Centre (SOC)," J. Inf. Warf., vol. 19, no. 1, pp. 65–80, 2020.
+[385] [7] Canadian Institute for Cybersecurity, "CICIDS2017 Dataset," University of New Brunswick, 2017. [Online]. Available: https://www.unb.ca/cic/datasets/ids-2017.html
+[386] [8] F. Pedregosa et al., "Scikit-learn: Machine Learning in Python," J. Mach. Learn. Res., vol. 12, pp. 2825–2830, 2011.
+[387] 
+[388] APPENDIX
+[389] A.1 Full Source Code
+[390] Full source code is available at: https://github.com/Purnimauthan?tab=repositories&q=&type=public&language=&sort=
+[391] Repository structure: src/ (6 Python modules), notebooks/ (6 Jupyter notebooks + prototype_demo), outputs/ (saved model, plots, CSV reports), data/ (processed splits), app.py (Flask web interface), requirements.txt.
+[392] A.2 Self and Peer Assessment
+[393] 
+[394] 
